@@ -1,0 +1,5 @@
+# Default owners
+* @propellerexmouth/website-developers
+
+# Repository Admin only for .github
+/.github/* @propellerexmouth/repository-admin
