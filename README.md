@@ -18,7 +18,7 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Learn More About Next
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -27,8 +27,59 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Vercel is set up to deploy the `main` branch to production. This is currently published at https://propellerexmouth.vercel.app/ (Note: this will be updated to the main propellerexmouth.co.uk domain at a later date)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To see a preview of any changes, open a PR against `main` and Vercel will generate a new build for you and post a comment with the URL in your PR. 
+
+If you're work isn't ready for review yet, you can open a Draft PR instead. This will still generate a Vercel Preview build.
+
+## Git workflow
+
+`main` is a protected branch and can only be updated via Pull Request.
+
+The git workflow to to contribute is as follows:
+
+1. Make sure your local repo is up to date
+    ```
+    git checkout main && git pull
+    ```
+1. Branch off `main`
+    ```
+    git checkout -b my-branch
+    ```
+1. Make changes
+
+1. Commit your changes
+    ```
+    git add myfile.tsx
+    git commit -m "My commit message"
+    ```
+
+1. Push your branch
+    ```
+    git push
+    ```
+1. Open a Pull Request. This can be a Draft PR is you're still working on changes and just want a preview build.
+
+1. If Github says your branch is out of date, you'll need to rebase it against the latest changes in `main`. You can do this as follows:
+    
+    a. Update your local repo with the lates changes and switch back to your branch:
+    ```
+    git checkout main && git pull && git checkout my-branch
+    ```
+
+    b. Rebase your branch against `main`:
+    ```
+    git rebase main
+    ```
+
+    c. Force push your branch:
+    ```
+    git push --force-with-lease
+    ```
+
+
+
+
