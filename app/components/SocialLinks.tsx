@@ -3,7 +3,7 @@ import { FacebookIcon, InstagramIcon, LinkedinIcon, TwitterIcon } from "./Icons"
 
 const SocialLinks = () => {
   return (
-    <div className="flex space-x-2 text-red-600 text-xs py-1">
+    <div className="flex space-x-2 text-red-600 py-1">
       <a className="font-mono" target="_blank" rel="nofollow" href="https://www.facebook.com/propellerexmouth">
         <FacebookIcon className={"text-red-600 bg-white rounded-full p-2 stroke-none h-8 w-8"} />
       </a>

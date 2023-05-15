@@ -14,8 +14,8 @@ const Footer = () => {
         </h2>
         <SocialLinks />
       </div>
-      <nav className="space-y-2 flex flex-col underline">
-        <NavLinks incHome={true} />
+      <nav className="flex flex-col space-y-4 underline">
+        <NavLinks incHome={true} incContact={true} />
       </nav>
       <div id="contact-details" className="space-y-8 ">
         <div id="email" className="flex space-x-2">

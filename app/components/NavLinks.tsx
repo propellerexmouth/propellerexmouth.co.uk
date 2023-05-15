@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const NavLinks = ({ incHome }: { incHome: boolean }) => {
+const NavLinks = ({ incHome = false, incContact = false }: { incHome: boolean; incContact: boolean }) => {
   return (
     <>
       {incHome && (
@@ -21,6 +21,11 @@ const NavLinks = ({ incHome }: { incHome: boolean }) => {
       <Link className="hover:underline" href="/events">
         Events
       </Link>
+      {incContact && (
+        <Link className="hover:underline" href="/contact">
+          Contact
+        </Link>
+      )}
     </>
   );
 };
