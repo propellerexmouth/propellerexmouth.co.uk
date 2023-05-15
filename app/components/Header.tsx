@@ -7,7 +7,7 @@ import MobileNav from "./MobileNav";
 const Header = () => {
   return (
     <>
-      <header className="hidden lg:flex w-full bg-white">
+      <header className="hidden lg:flex w-full bg-white text-black">
         <div id="desktop-header-container" className="mx-auto w-full max-w-6xl p-6">
           <div className="flex justify-between items-center">
             <h1 className="flex text-2xl items-center space-x-4">
@@ -21,7 +21,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <header id="mobile-header-container" className="flex lg:hidden w-full bg-white">
+      <header id="mobile-header-container" className="flex lg:hidden w-full bg-white text-black">
         <div className="flex justify-between w-full items-center p-4">
           <MobileNav />
         </div>
