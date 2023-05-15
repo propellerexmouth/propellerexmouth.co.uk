@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { MenuIcon } from "./Icons";
+import { CloseIcon, MenuIcon } from "./Icons";
 import SocialLinks from "./SocialLinks";
 import NavLinks from "./NavLinks";
 
@@ -20,9 +20,7 @@ const MobileNav = () => {
       <NavLinks incHome={false} />
     </nav> */}
 
-        <button onClick={toggleMenu}>
-          <MenuIcon className="h-12 w-12 px-2 py-1 stroke-2 cursor-pointer font-bold" />
-        </button>
+        <button onClick={toggleMenu}>{isOpen ? <CloseIcon className="h-12 w-12 px-2 py-1 stroke-2 cursor-pointer font-bold" /> : <MenuIcon className="h-12 w-12 px-2 py-1 stroke-2 cursor-pointer font-bold" />}</button>
       </div>
       <div>
         {isOpen && (
@@ -30,8 +28,8 @@ const MobileNav = () => {
             <div className="flex flex-col items-center justify-center space-y-4 text-2xl my-8" onClick={toggleMenu}>
               <NavLinks incHome={false} incContact={true} />
             </div>
-            <div className="flex w-full text-2xl justify-evenly">
-              <SocialLinks />
+            <div className="flex w-full text-2xl justify-evenly" onClick={toggleMenu}>
+              <SocialLinks className="h-12 w-12 p-0 m-4" />
             </div>
           </>
         )}
