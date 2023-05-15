@@ -29,7 +29,7 @@ const MobileNav = () => {
               <NavLinks incHome={false} incContact={true} />
             </div>
             <div className="flex w-full text-2xl justify-evenly" onClick={toggleMenu}>
-              <SocialLinks className="h-12 w-12 p-0 m-4" />
+              <SocialLinks className="h-16 w-16 p-0 mx-2" />
             </div>
           </>
         )}
