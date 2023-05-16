@@ -29,11 +29,11 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${archia.variable} font-sans`}>
-      <body className="antialiased">
+      <body className="flex flex-col antialiased min-h-full">
         <PreHeader />
         <Header />
 
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">{children}</main>
+        <main className="min-h-fit">{children}</main>
 
         <Footer />
       </body>
