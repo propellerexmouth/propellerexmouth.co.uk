@@ -14,20 +14,20 @@ const AboutPage = () => {
         <div className="mx-auto w-full max-w-6xl px-6 py-20 flex align-top justify-between">
         <div className="w-[48%] grid grid-rows-2 grid-cols-2 gap-4">
             <div className="block">
-              <Image src="/images/DSC_0112.jpg" alt="placeholder image" className="object-cover h-full w-full" width="100" height="100"/>
+              <Image src="/../public/images/pub-lunch.jpg" alt="placeholder image" className="object-cover h-full w-full aspect-square" width="500" height="500"/>
             </div>
             <div className="block">
-              <Image src="/images/DSC_0112.jpg" alt="placeholder image" className="object-cover h-full w-full" width="100" height="100"/>
+              <Image src="/../public/images/Propeller-cake.jpg" alt="placeholder image" className="object-cover h-full w-full aspect-square" width="500" height="500"/>
             </div>
             <div className="block">
-              <Image src="/images/DSC_0112.jpg" alt="placeholder image" className="object-cover h-full w-full" width="100" height="100"/>
+              <Image src="/../public/images/Paddleboarding.jpg" alt="placeholder image" className="object-cover h-full w-full aspect-square" width="500" height="500"/>
             </div>
             <div className="block">
-              <Image src="/images/DSC_0112.jpg" alt="placeholder image" className="object-cover h-full w-full" width="100" height="100"/>
+              <Image src="/../public/images/DIY.jpg" alt="placeholder image" className="object-cover h-full w-full aspect-square" width="500" height="500"/>
             </div>
           </div>
           <div className="w-[48%]">
-            <h4 className="mb-4 text-xl tracking-tight sm:text-xl">
+            <h4 className="mb-4 text-xl tracking-tight sm:text-2xl">
               Propeller is not just a co-working space, it’s a not-for-profit, volunteer run venture designed with a particular bias towards the creative and tech based industries, with a focus on promoting and growing these sectors in Exmouth.
             </h4>
             <p>
@@ -44,7 +44,7 @@ const AboutPage = () => {
 
         <div className="flex items-stretch justify-between mt-8">
           <div className="w-[18%]">
-            <Image src="/images/DSC_0112.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
+            <Image src="/../public/images/team/Charlie-Tilbury.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
           </div>
           <div className="w-[78%]">
             <h4 className="font-bold uppercase text-md">
@@ -61,7 +61,7 @@ const AboutPage = () => {
 
         <div className="flex items-stretch justify-between mt-8">
           <div className="w-[18%]">
-            <Image src="/images/DSC_0112.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
+            <Image src="/../public/images/team/Nathan-Budd.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
           </div>
           <div className="w-[78%]">
             <h4 className="font-bold uppercase text-md">
@@ -78,7 +78,7 @@ const AboutPage = () => {
 
         <div className="flex items-stretch justify-between mt-8">
           <div className="w-[18%]">
-            <Image src="/images/DSC_0112.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
+            <Image src="/../public/images/team/Jim-Hill.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
           </div>
           <div className="w-[78%]">
             <h4 className="font-bold uppercase text-md">
@@ -95,7 +95,7 @@ const AboutPage = () => {
 
         <div className="flex items-stretch justify-between mt-8">
           <div className="w-[18%]">
-            <Image src="/images/DSC_0112.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
+            <Image src="/../public/images/team/Alex-Marshall.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
           </div>
           <div className="w-[78%]">
             <h4 className="font-bold uppercase text-md">
@@ -112,7 +112,7 @@ const AboutPage = () => {
 
         <div className="flex items-stretch justify-between mt-8">
           <div className="w-[18%]">
-            <Image src="/images/DSC_0112.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
+            <Image src="/../public/images/team/Jasper-Westaway.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
           </div>
           <div className="w-[78%]">
             <h4 className="font-bold uppercase text-md">
@@ -127,11 +127,6 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-
-
-
-
-
 
         <div className="relative overflow-hidden bg-prop-teal">
           <div className="absolute z-0 top-0 left-0 w-full h-full">
@@ -155,7 +150,7 @@ const AboutPage = () => {
                   Hatch is a global startup program that helps grow your business. You’ll gain access to a community of builders, technical support, infrastructure credit and more!
                 </p>
                 <p>
-                  Get full details here: <a href="https://digitalocean.com/hatch">digitalocean.com/hatch</a> and you'll need documentation from us, so just ask.
+                  Get full details here: <a href="https://digitalocean.com/hatch">digitalocean.com/hatch</a> and you will need documentation from us, so just ask.
                 </p>
               </div>
               <div className="bg-slate-200 w-[48%] p-12">
