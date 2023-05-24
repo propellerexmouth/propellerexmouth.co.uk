@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         "prop-turquoise": "#D5EAEC",
+        "prop-teal": "#355D63",
         "prop-red": "#E23540",
       },
       backgroundImage: {
