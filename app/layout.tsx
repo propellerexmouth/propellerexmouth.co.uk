@@ -29,7 +29,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${archia.variable} font-sans`}>
-      <body className="flex flex-col antialiased min-h-full">
+      <body className="flex flex-col antialiased min-h-full text-black">
         <PreHeader />
         <Header />
 

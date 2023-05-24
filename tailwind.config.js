@@ -2,6 +2,18 @@
 module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}", "./app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
+    colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      black: "#000",
+      white: "#fff",
+      'primary-900': "#e23540",
+      'primary-100': "#ffe9df",
+      'secondary-900': "#355d63",
+      'secondary-100': "#d5eaec",
+      'secondary-500': "#71bfd6",
+      'grey-20': "#f1f1f1",
+    },
     extend: {
       colors: {
         "prop-turquoise": "#D5EAEC",
