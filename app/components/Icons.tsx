@@ -186,7 +186,7 @@ export function PropellerLogoGreen({ className }: { className?: string }) {
   return (
     <>
       <svg className={className} fill="none" viewBox="0 0 850 1108.68" xmlns="http://www.w3.org/2000/svg">
-        <path fill="#2D4E53" fillRule="evenodd" d="M385.148 892.852H248.789v215.828H0V0h385.148v892.852Z" clip-rule="evenodd"></path><path fill="#2D4E53" d="M653.994 0H451.127v892.852h202.867V0ZM850 137.635H727.541v617.584H850V137.635Z"></path>
+        <path fill="#2D4E53" fillRule="evenodd" d="M385.148 892.852H248.789v215.828H0V0h385.148v892.852Z" clipRule="evenodd"></path><path fill="#2D4E53" d="M653.994 0H451.127v892.852h202.867V0ZM850 137.635H727.541v617.584H850V137.635Z"></path>
       </svg>
     </>
   );
