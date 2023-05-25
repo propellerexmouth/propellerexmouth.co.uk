@@ -15,11 +15,6 @@ module.exports = {
       'grey-20': "#f1f1f1",
     },
     extend: {
-      colors: {
-        "prop-turquoise": "#D5EAEC",
-        "prop-teal": "#355D63",
-        "prop-red": "#E23540"
-      },
       maxWidth: {
         wrapper: "1248px",
       },
