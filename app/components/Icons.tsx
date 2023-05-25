@@ -191,3 +191,14 @@ export function PropellerLogoGreen({ className }: { className?: string }) {
     </>
   );
 }
+
+export function TickIcon({ className }: { className?: string }) {
+  return (
+    <>
+      <span className="sr-only">Tick Icon</span>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.91933 18.0403C8.83027 18.0403 8.74214 18.0075 8.67278 17.9419L3.0731 12.6619C2.92872 12.5259 2.92122 12.2972 3.0581 12.1528C3.19497 12.0084 3.42278 12.0019 3.56716 12.1378L8.91652 17.1826L20.43 6.06102C20.5735 5.9232 20.8013 5.92696 20.9391 6.06946C21.0769 6.21289 21.0732 6.44071 20.9307 6.57852L9.17067 17.9382C9.10035 18.0066 9.01035 18.0404 8.91941 18.0404L8.91933 18.0403Z" fill="white" stroke="white"/>
+      </svg>
+    </>
+  );
+}
