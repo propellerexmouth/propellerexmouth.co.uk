@@ -23,7 +23,7 @@ const HomePage = () => {
   before:z-[-10]
   before:block
   before:w-full before:h-full
-  before:bg-red-500
+  before:bg-primary-900
 "
           ></div>
           <div
@@ -42,10 +42,10 @@ const HomePage = () => {
   before:z-[-10]
   before:block
   before:w-full before:h-full
-  before:bg-red-500
+  before:bg-primary-900
 "
           ></div>
-          <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8 mt-20 mb-40 z-20 bg-red-500 p-10">
+          <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8 mt-20 mb-40 z-20 bg-primary-900 p-10">
             {/* <img className="h-11" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" /> */}
             <h1 className="mt-8 text-4xl font-bold tracking-tight text-white sm:text-6xl">More than a work space</h1>
             <p className="mt-8 text-lg leading-8 text-white font-bold">We are a community of like-minded people who share ideas and help each other to develop and grow our businesses.</p>
@@ -65,10 +65,10 @@ const HomePage = () => {
           </div>
         </div>
         <div className="flex flex-col w-full items-center mt-10 mb-20">
-          <h1 className="text-red-500 text-4xl font-bold mb-12">The Propeller Community</h1>
+          <h1 className="text-primary-900 text-4xl font-bold mb-12">The Propeller Community</h1>
           <div className="flex justify-evenly w-full mb-12">
             <div className="flex items-center">
-              <div className="flex items-center p-4 bg-slate-200 text-emerald-600 bold text-3xl h-24 w-24 justify-center">
+              <div className="flex items-center p-4 bg-secondary-100 text-secondary-900 bold text-3xl h-24 w-24 justify-center">
                 <p className="">Icon</p>
               </div>
               <div className="p-4 text-sm">
@@ -76,7 +76,7 @@ const HomePage = () => {
               </div>
             </div>
             <div className="flex items-center">
-              <div className="flex items-center p-4 bg-slate-200 text-emerald-600 bold text-3xl h-24 w-24 justify-center">
+              <div className="flex items-center p-4 bg-secondary-100 text-secondary-900 bold text-3xl h-24 w-24 justify-center">
                 <p className="">Icon</p>
               </div>
               <div className="p-4 text-sm">
@@ -84,7 +84,7 @@ const HomePage = () => {
               </div>
             </div>
             <div className="flex items-center">
-              <div className="flex items-center p-4 bg-slate-200 text-emerald-600 bold text-3xl h-24 w-24 justify-center">
+              <div className="flex items-center p-4 bg-secondary-100 text-secondary-900 bold text-3xl h-24 w-24 justify-center">
                 <p className="">Icon</p>
               </div>
               <div className="p-4 text-sm">
@@ -92,17 +92,17 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <Link href="/community" className="text-red-500 underline text-xl">
+          <Link href="/community" className="text-primary-900 underline text-xl">
             Find out more about our members
           </Link>
         </div>
-        <div className="bg-teal-800 flex p-16 space-x-4 bg-[url('/images/vercel.svg')] mb-8">
-          <div className="bg-slate-200 w-full h-96 flex flex-col">
+        <div className="bg-secondary-900 flex p-16 space-x-4 bg-[url('/images/vercel.svg')] mb-8">
+          <div className="bg-secondary-100 w-full h-96 flex flex-col">
             <div className="p-4 space-y-4">
               <h1 className="text-3xl font-bold">Co-working</h1>
               <p>Desks in our shared workspace are suitable for individuals and small teams</p>
               <p>
-                <Link href="/community" className="text-red-500 underline">
+                <Link href="/community" className="text-primary-900 underline">
                   Find out more
                 </Link>
               </p>
@@ -111,12 +111,12 @@ const HomePage = () => {
               <Image src="/images/DSC_0112.jpg" alt="Placeholder Image" height={250} width={375} />
             </div>
           </div>
-          <div className="bg-slate-200 w-full h-96 flex flex-col">
+          <div className="bg-secondary-100 w-full h-96 flex flex-col">
             <div className="p-4 space-y-4">
               <h1 className="text-3xl font-bold">Offices</h1>
               <p>We have a number of private offices, ranging from 4 - 20 people.</p>
               <p>
-                <Link href="/community" className="text-red-500 underline">
+                <Link href="/community" className="text-primary-900 underline">
                   Find out more
                 </Link>
               </p>
@@ -125,12 +125,12 @@ const HomePage = () => {
               <Image src="/images/DSC_0112.jpg" alt="Placeholder Image" height={250} width={375} />
             </div>
           </div>
-          <div className="bg-slate-200 w-full h-96 flex flex-col min-h-full">
+          <div className="bg-secondary-100 w-full h-96 flex flex-col min-h-full">
             <div className="p-4 space-y-4">
               <h1 className="text-3xl font-bold">Meeting Spaces</h1>
               <p>Our meeting spaces are bookable for BOTH members and non-members</p>
               <p>
-                <Link href="/community" className="text-red-500 underline">
+                <Link href="/community" className="text-primary-900 underline">
                   Find out more
                 </Link>
               </p>
