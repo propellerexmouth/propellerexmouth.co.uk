@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import SpacesSection from "./components/SpacesSection";
 
 const HomePage = () => {
   return (
-    <div className="flex bg-white w-full">
+    <div className="bg-white w-full">
       <div className=" max-w-6xl px-6 mx-auto  overflow-hidden">
         <div className="flex">
           <div
@@ -96,51 +97,8 @@ const HomePage = () => {
             Find out more about our members
           </Link>
         </div>
-        <div className="bg-secondary-900 flex p-16 space-x-4 bg-[url('/images/vercel.svg')] mb-8">
-          <div className="bg-secondary-100 w-full h-96 flex flex-col">
-            <div className="p-4 space-y-4">
-              <h1 className="text-3xl font-bold">Co-working</h1>
-              <p>Desks in our shared workspace are suitable for individuals and small teams</p>
-              <p>
-                <Link href="/community" className="text-primary-900 underline">
-                  Find out more
-                </Link>
-              </p>
-            </div>
-            <div className="relative">
-              <Image src="/images/DSC_0112.jpg" alt="Placeholder Image" height={250} width={375} />
-            </div>
-          </div>
-          <div className="bg-secondary-100 w-full h-96 flex flex-col">
-            <div className="p-4 space-y-4">
-              <h1 className="text-3xl font-bold">Offices</h1>
-              <p>We have a number of private offices, ranging from 4 - 20 people.</p>
-              <p>
-                <Link href="/community" className="text-primary-900 underline">
-                  Find out more
-                </Link>
-              </p>
-            </div>
-            <div className="relative">
-              <Image src="/images/DSC_0112.jpg" alt="Placeholder Image" height={250} width={375} />
-            </div>
-          </div>
-          <div className="bg-secondary-100 w-full h-96 flex flex-col min-h-full">
-            <div className="p-4 space-y-4">
-              <h1 className="text-3xl font-bold">Meeting Spaces</h1>
-              <p>Our meeting spaces are bookable for BOTH members and non-members</p>
-              <p>
-                <Link href="/community" className="text-primary-900 underline">
-                  Find out more
-                </Link>
-              </p>
-            </div>
-            <div className="relative">
-              <Image src="/images/DSC_0112.jpg" alt="Placeholder Image" height={250} width={375} />
-            </div>
-          </div>
-        </div>
       </div>
+      <SpacesSection />
     </div>
   );
 };
