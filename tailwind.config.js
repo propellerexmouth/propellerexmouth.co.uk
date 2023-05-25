@@ -18,7 +18,10 @@ module.exports = {
       colors: {
         "prop-turquoise": "#D5EAEC",
         "prop-teal": "#355D63",
-        "prop-red": "#E23540",
+        "prop-red": "#E23540"
+      },
+      maxWidth: {
+        wrapper: "1248px",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
