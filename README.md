@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies, `npm install` then run the development server:
 
 ```bash
 npm run dev
@@ -31,7 +31,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 Vercel is set up to deploy the `main` branch to production. This is currently published at https://propellerexmouth.vercel.app/ (Note: this will be updated to the main propellerexmouth.co.uk domain at a later date)
 
-To see a preview of any changes, open a PR against `main` and Vercel will generate a new build for you and post a comment with the URL in your PR. 
+To see a preview of any changes, open a PR against `main` and Vercel will generate a new build for you and post a comment with the URL in your PR.
 
 If you're work isn't ready for review yet, you can open a Draft PR instead. This will still generate a Vercel Preview build.
 
@@ -42,44 +42,44 @@ If you're work isn't ready for review yet, you can open a Draft PR instead. This
 The git workflow to to contribute is as follows:
 
 1. Make sure your local repo is up to date
-    ```
-    git checkout main && git pull
-    ```
+   ```
+   git checkout main && git pull
+   ```
 1. Branch off `main`
-    ```
-    git checkout -b my-branch
-    ```
+   ```
+   git checkout -b my-branch
+   ```
 1. Make changes
 
 1. Commit your changes
-    ```
-    git add myfile.tsx
-    git commit -m "My commit message"
-    ```
+
+   ```
+   git add myfile.tsx
+   git commit -m "My commit message"
+   ```
 
 1. Push your branch
-    ```
-    git push
-    ```
+   ```
+   git push
+   ```
 1. Open a Pull Request. This can be a Draft PR is you're still working on changes and just want a preview build.
 
 1. If Github says your branch is out of date, you'll need to rebase it against the latest changes in `main`. You can do this as follows:
-    
-    a. Update your local repo with the lates changes and switch back to your branch:
-    ```
-    git checkout main && git pull && git checkout my-branch
-    ```
 
-    b. Rebase your branch against `main`:
-    ```
-    git rebase main
-    ```
+   a. Update your local repo with the lates changes and switch back to your branch:
 
-    c. Force push your branch:
-    ```
-    git push --force-with-lease
-    ```
+   ```
+   git checkout main && git pull && git checkout my-branch
+   ```
 
+   b. Rebase your branch against `main`:
 
+   ```
+   git rebase main
+   ```
 
+   c. Force push your branch:
 
+   ```
+   git push --force-with-lease
+   ```

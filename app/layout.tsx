@@ -1,16 +1,9 @@
 import "./globals.css";
-import localFont from "@next/font/local";
-
-const archia = localFont({
-  src: "../public/fonts/archia-regular-webfont.woff2",
-  variable: "--font-archia",
-  display: "swap",
-});
 
 import Footer from "./components/Footer";
 import PreHeader from "./components/PreHeader";
 import Header from "./components/Header";
-
+import { archia } from "./fonts";
 export const metadata = {
   title: {
     default: "Propeller Exmouth",
