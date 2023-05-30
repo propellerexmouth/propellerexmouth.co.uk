@@ -51,6 +51,17 @@ export function UpRightArrow({ className }: { className?: string }) {
   );
 }
 
+export function RightArrow({ className }: { className?: string }) {
+  return (
+    <>
+      <span className="sr-only">Arrow Icon</span>
+      <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" className={`${className}`}>
+        <path fillRule="evenodd" clipRule="evenodd" d="M22.1184 12.8046L4.52385e-05 12.8046L4.52829e-05 11.7884L22.1184 11.7884L11.492 1.21155L12.2035 0.499999L24 12.2965L12.2035 24.093L11.492 23.432L22.1184 12.8046Z" fill="current"/>
+      </svg>
+    </>
+  );
+}
+
 export function TwitterIcon({ className }: { className?: string }) {
   return (
     <>
