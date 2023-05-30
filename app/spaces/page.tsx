@@ -5,11 +5,11 @@ import SimpleHero from "../components/SimpleHero";
 
 const SpacesPage = () => {
   
-  const handleClick = (e) => {
-    const target = e.target;
-    console.log(target);
-    target.classList.add('is-active');
-  }
+  // const handleClick = (e) => {
+  //   const target = e.target;
+  //   console.log(target);
+  //   target.classList.add('is-active');
+  // }
 
   return (    
     <div className="w-full bg-white">
@@ -20,21 +20,21 @@ const SpacesPage = () => {
         <div className="mx-auto w-full max-w-6xl px-6 py-20 flex align-top justify-between flex-col md:flex-row">
           <div className="w-full md:w-[20%]">
 
-            <div className="js-spaces-toggle group is-active block cursor-pointer" data-id="desks" onClick={handleClick}>
+            <div className="js-spaces-toggle group is-active block cursor-pointer" data-id="desks">
               <div className="flex items-center justify-between p-4 mb-4 bg-white text-black border border-white group-[.is-active]:bg-primary-900 group-[.is-active]:text-white group-[.is-active]:border-primary-900">
                 <span className="font-bold">Desks</span>
                 <RightArrow className="w-6 h-6 group-[.is-active]:fill-white fill-primary-900"/>
               </div>
             </div>
 
-            <div className="js-spaces-toggle group block cursor-pointer" data-id="offices" onClick={handleClick}>
+            <div className="js-spaces-toggle group block cursor-pointer" data-id="offices">
               <div className="flex items-center justify-between p-4 mb-4 bg-white text-black border border-white group-[.is-active]:bg-primary-900 group-[.is-active]:text-white group-[.is-active]:border-primary-900">
                 <span className="font-bold">Offices</span>
                 <RightArrow className="w-6 h-6 group-[.is-active]:fill-white fill-primary-900"/>
               </div>
             </div>
 
-            <div className="js-spaces-toggle group block cursor-pointer" data-id="meeting" onClick={handleClick}>
+            <div className="js-spaces-toggle group block cursor-pointer" data-id="meeting">
               <div className="flex items-center justify-between p-4 mb-4 bg-white text-black border border-white group-[.is-active]:bg-primary-900 group-[.is-active]:text-white group-[.is-active]:border-primary-900">
                 <span className="font-bold">Meeting Spaces</span>
                 <RightArrow className="w-6 h-6 group-[.is-active]:fill-white fill-primary-900"/>
