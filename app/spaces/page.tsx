@@ -1,14 +1,24 @@
 "use client";
-import { useRef, useState } from "react";
+import { useState, useRef } from "react";
 import 'swiper/css';
 import Image from "next/image";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { useSwiper } from 'swiper/react';
 import { RightArrow } from "../components/Icons";
 import SimpleHero from "../components/SimpleHero";
+import { register } from 'swiper/element/bundle';
+import "../../public/css/swiper.css";
+
+
+register();
 
 const SpacesPage = () => {
   const [activeElement, setActiveElement] = useState("desks");
+
+  const swiperElRef = useRef(null);
+
+  const handleNext = () => {
+    if (!swiperElRef.current) return;
+    swiperElRef.current.swiper.slideNext();
+  };
 
   return (
       <div className="w-full bg-white">
@@ -58,7 +68,7 @@ const SpacesPage = () => {
                     Pricing
                   </h4>
                   <p className="mb-4">
-                    Prices are exclusive of VAT
+                    *Prices are exclusive of VAT
                   </p>
                   <div className="flex items-center justify-between flex-wrap mb-4">
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
@@ -66,7 +76,7 @@ const SpacesPage = () => {
                         Pricing
                       </small>
                       <p className="text-xl">
-                        £200 per month
+                        £220 per month*
                       </p>
                     </div>
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
@@ -74,7 +84,7 @@ const SpacesPage = () => {
                         Daily hot desk
                       </small>
                       <p className="text-xl">
-                        £15 per day
+                        £15 per day*
                       </p>
                     </div>
                   </div>
@@ -97,7 +107,7 @@ const SpacesPage = () => {
                     Pricing
                   </h4>
                   <p className="mb-4">
-                    Prices are exclusive of VAT
+                    *Prices are exclusive of VAT
                   </p>
                   <div className="flex items-center justify-between flex-wrap mb-4">
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
@@ -105,7 +115,7 @@ const SpacesPage = () => {
                         Pricing
                       </small>
                       <p className="text-xl">
-                        £200 per month
+                        £220 per month*
                       </p>
                     </div>
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
@@ -113,7 +123,7 @@ const SpacesPage = () => {
                         Daily hot desk
                       </small>
                       <p className="text-xl">
-                        £15 per day
+                        £15 per day*
                       </p>
                     </div>
                   </div>
@@ -136,7 +146,7 @@ const SpacesPage = () => {
                     Pricing
                   </h4>
                   <p className="mb-4">
-                    Prices are exclusive of VAT
+                    *Prices are exclusive of VAT
                   </p>
                   <div className="flex items-center justify-between flex-wrap mb-4">
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
@@ -144,7 +154,7 @@ const SpacesPage = () => {
                         Pricing
                       </small>
                       <p className="text-xl">
-                        £200 per month
+                        £220 per month*
                       </p>
                     </div>
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
@@ -152,7 +162,7 @@ const SpacesPage = () => {
                         Daily hot desk
                       </small>
                       <p className="text-xl">
-                        £15 per day
+                        £15 per day*
                       </p>
                     </div>
                   </div>
@@ -163,23 +173,28 @@ const SpacesPage = () => {
           </div>
         </div>
         <div className="bg-gradient-to-b from-secondary-100 from-25% to-25% to-transparent py-16 w-full overflow-hidden">
-          <div className="mx-auto w-full max-w-6xl px-6">
-            <Swiper
-              spaceBetween={50}
-              slidesPerView={2}
-              onSlideChange={() => console.log('slide change')}
-              onSwiper={(swiper) => console.log(swiper)}
-              >
-              <SwiperSlide>
-                <Image src="/images/Court-house.jpg" alt="placeholder image" className="object-cover h-full w-full aspect-square" width="500" height="500"/>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image src="/images/bar-stairs.jpg" alt="placeholder image" className="object-cover h-full w-full aspect-square" width="500" height="500"/>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image src="/images/inconf-room.jpg" alt="placeholder image" className="object-cover h-full w-full aspect-square" width="500" height="500"/>
-              </SwiperSlide>
-            </Swiper>
+          <div className="spaces-swiper mx-auto w-full max-w-6xl px-6 relative">
+
+            <swiper-container
+              ref={swiperElRef}
+              slides-per-view="1.8"
+              space-between="30"
+              navigation="false"
+            >
+              <swiper-slide>
+                <Image src="/images/Court-house.jpg" alt="placeholder image" className="object-cover h-full w-full aspect-square" width="500" height="500" loading="lazy"/>
+              </swiper-slide>
+              <swiper-slide>
+                <Image src="/images/bar-stairs.jpg" alt="placeholder image" className="object-cover h-full w-full aspect-square" width="500" height="500" loading="lazy"/>
+              </swiper-slide>
+              <swiper-slide>
+                <Image src="/images/inconf-room.jpg" alt="placeholder image" className="object-cover h-full w-full aspect-square" width="500" height="500" loading="lazy"/>
+              </swiper-slide>
+            </swiper-container>
+
+            <div className="next-arrow w-10 h-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fill-primary-900 z-10 cursor-pointer" onClick={handleNext}>
+              <RightArrow className="w-10 h-10 fill-primary-900"/>
+            </div>
           </div>
         </div>
 
@@ -191,37 +206,37 @@ const SpacesPage = () => {
             <div className="flex justify-evenly flex-wrap w-full mb-12">
 
               <div className="text-center w-full md:w-[30%] my-8">
-                <Image src="/images/icons/clock.png" alt="clock" className="object-contain mx-auto h-16 w-16 aspect-square" width="100" height="100"/>
+                <Image src="/images/icons/clock.png" alt="clock" className="object-contain mx-auto h-16 w-16 aspect-square" width="100" height="100" loading="lazy"/>
                 <p className="p-4 text-sm">
                   24 hour access to desks, sofas, meeting spaces, kitchen and internet
                 </p>
               </div>
               <div className="text-center w-full md:w-[30%] my-8">
-                <Image src="/images/icons/meteor-rain.png" alt="meteor rain" className="object-contain mx-auto h-16 w-16 aspect-square" width="100" height="100"/>
+                <Image src="/images/icons/meteor-rain.png" alt="meteor rain" className="object-contain mx-auto h-16 w-16 aspect-square" width="100" height="100" loading="lazy"/>
                 <p className="p-4 text-sm">
                   Time with other entrepreneurs that you can share ideas with
                 </p>
               </div>
               <div className="text-center w-full md:w-[30%] my-8">
-                  <Image src="/images/icons/wave.png" alt="wave" className="object-contain mx-auto h-16 w-16 aspect-square" width="100" height="100"/>
+                  <Image src="/images/icons/wave.png" alt="wave" className="object-contain mx-auto h-16 w-16 aspect-square" width="100" height="100" loading="lazy"/>
                 <p className="p-4 text-sm">
                   Free access to talks and lectures from successful entrepreneurs and makers
                 </p>
               </div>
               <div className="text-center w-full md:w-[30%] my-8">
-                <Image src="/images/icons/coffee-cup.png" alt="coffee-cup" className="object-contain mx-auto h-16 w-16 aspect-square" width="100" height="100"/>
+                <Image src="/images/icons/coffee-cup.png" alt="coffee-cup" className="object-contain mx-auto h-16 w-16 aspect-square" width="100" height="100" loading="lazy"/>
                 <p className="p-4 text-sm">
                   Free tea and coffee and biscuits
                 </p>
               </div>
               <div className="text-center w-full md:w-[30%] my-8">
-                <Image src="/images/icons/sunrise.png" alt="sunrise" className="object-contain mx-auto h-16 w-16 aspect-square" width="100" height="100"/>
+                <Image src="/images/icons/sunrise.png" alt="sunrise" className="object-contain mx-auto h-16 w-16 aspect-square" width="100" height="100" loading="lazy"/>
                 <p className="p-4 text-sm">
                   An awesome location, close to the sea, estuary, bars, shops and transport
                 </p>
               </div>
               <div className="text-center w-full md:w-[30%] my-8">
-                <Image src="/images/icons/cycling.png" alt="cycling" className="object-contain mx-auto h-16 w-16 aspect-square" width="100" height="100"/>
+                <Image src="/images/icons/cycling.png" alt="cycling" className="object-contain mx-auto h-16 w-16 aspect-square" width="100" height="100" loading="lazy"/>
                 <p className="p-4 text-sm">
                   Storage lockers, showers and secure bike storage
                 </p>
