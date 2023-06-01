@@ -1,14 +1,34 @@
+"use client";
+import { useRef } from "react";
 import Image from "next/image";
+import { RightArrow } from "../components/Icons";
 import Link from "next/link";
-import React from "react";
 import SpacesSection from "../components/SpacesSection";
 
+import "../../public/css/swiper.css";
+import 'swiper/css';
+import { register } from 'swiper/element/bundle';
+import { SwiperRef } from "@/types/swiper";
+
+register();
 
 const CommunityPage = () => {
+  const swiperElRef = useRef<SwiperRef>(null);
+
+  const handleNext = () => {
+    if (!swiperElRef.current) return;
+    swiperElRef.current.swiper.slideNext();
+  };
+
+  const handlePrev = () => {
+    if (!swiperElRef.current) return;
+    swiperElRef.current.swiper.slidePrev();
+  };
+
   return (
     <div className="bg-white w-full">
       <div className="w-full relative overflow-hidden">
-        <div className="max-w-3xl absolute top-0 left-0 w-full h-full sm:max-w-5xl lg:max-w-none">
+        <div className="max-w-5xl absolute top-0 left-0 w-full h-full sm:max-w-5xl lg:max-w-none">
           <Image src="/images/DSC_0112.jpg" alt="App screenshot" width={1080} height={720} className="object-cover h-full w-[60rem]" />
         </div>
         <div className="max-w-6xl px-6 mx-auto flex justify-end items-center">
@@ -57,13 +77,112 @@ const CommunityPage = () => {
         </div>
       </div>
 
-      <div className="py-20 w-full">
-        <h3 className="text-primary-900 text-4xl font-bold mb-12 max-w-6xl px-6 mx-auto text-center">
-          Community Stories
-        </h3>
-        <p>
-          Slider with images
-        </p>
+      <div className="py-20 w-full bg-secondary-100 overflow-hidden">
+        <div className="w-full max-w-5xl px-6 mx-auto relative">
+          <h3 className="text-primary-900 text-4xl font-bold mb-12 text-center">
+            Community Stories
+          </h3>
+
+          <swiper-container
+            ref={swiperElRef}
+            slides-per-view={1}
+            space-between={30}
+            centered-slides={true}
+            loop={true}
+            speed={1000}
+            watch-slides-progress={true}
+          >
+            
+            <swiper-slide>
+              <div className="flex community-slide">
+                <div
+                  className="
+                    mr-2
+                    relative
+                    block
+                    w-10 h-24
+                    bg-primary-900
+                  "
+                ></div>
+                <div
+                  className="
+                    mr-2
+                    relative
+                    block
+                    w-20 h-40
+                    bg-primary-900
+                  "
+                ></div>
+                <div className="flex flex-col lg:flex-row items-center justify-between bg-white p-8">
+                  <div className="w-full lg:w-[60%]">
+                    <Image src="/images/ordaloca.png" alt="Ordaloca" width="200" height="200" className="object-contain h-8 w-auto mb-8" loading="lazy"/>
+                    <p className="mb-8">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <Link href="https://ordaloca.com" className="text-primary-900 underline text-xl">
+                      ordaloca.com
+                    </Link>
+                  </div>
+                  <div className="w-full lg:w-[30%] flex justify-center lg:block mt-8 lg:mt-0">
+                    <Image src="/images/team/Jim-Hill.jpg" alt="Jim Hill" width="200" height="200" className="object-contain h-40 w-40" loading="lazy"/>
+                    <Image src="/images/team/Louis-Gillies.jpg" alt="Louis Gillies" width="200" height="200" className="object-contain h-40 w-40 -mt-8 lg:ml-auto lg:mr-0" loading="lazy"/>
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide>
+              <div className="flex community-slide">
+                <div
+                  className="
+                    mr-2
+                    relative
+                    block
+                    w-10 h-24
+                    bg-primary-900
+                  "
+                ></div>
+                <div
+                  className="
+                    mr-2
+                    relative
+                    block
+                    w-20 h-40
+                    bg-primary-900
+                  "
+                ></div>
+                <div className="flex flex-col lg:flex-row items-center justify-between bg-white p-8">
+                  <div className="w-full lg:w-[60%]">
+                    <Image src="/images/ordaloca.png" alt="Ordaloca" width="200" height="200" className="object-contain h-8 w-auto mb-8" loading="lazy"/>
+                    <p className="mb-8">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <Link href="https://ordaloca.com" className="text-primary-900 underline text-xl">
+                      ordaloca.com
+                    </Link>
+                  </div>
+                  <div className="w-full lg:w-[30%] flex justify-center lg:block mt-8 lg:mt-0">
+                    <Image src="/images/team/Jim-Hill.jpg" alt="Jim Hill" width="200" height="200" className="object-contain h-40 w-40" loading="lazy"/>
+                    <Image src="/images/team/Louis-Gillies.jpg" alt="Louis Gillies" width="200" height="200" className="object-contain h-40 w-40 -mt-8 lg:ml-auto lg:mr-0" loading="lazy"/>
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+          </swiper-container>
+
+          <div className="next-arrow w-10 h-10 absolute top-1/2 right-full -translate-y-1/2 fill-primary-900 z-10 cursor-pointer" onClick={handlePrev}>
+            <RightArrow className="w-10 h-10 fill-primary-900 rotate-180"/>
+          </div>
+          <div className="next-arrow w-10 h-10 absolute top-1/2 left-full -translate-y-1/2 fill-primary-900 z-10 cursor-pointer" onClick={handleNext}>
+            <RightArrow className="w-10 h-10 fill-primary-900"/>
+          </div>
+        </div>
       </div>
 
       <div className="max-w-6xl px-6 mx-auto">

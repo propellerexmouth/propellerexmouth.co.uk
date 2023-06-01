@@ -178,8 +178,9 @@ const SpacesPage = () => {
 
             <swiper-container
               ref={swiperElRef}
-              slides-per-view={1.8}
-              space-between={30}
+              slides-per-view={1}
+              speed={1000}
+              space-between={50}
             >
               <swiper-slide>
                 <Image src="/images/Court-house.jpg" alt="placeholder image" className="object-cover h-full w-full aspect-square" width="500" height="500" loading="lazy"/>
