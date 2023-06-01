@@ -1,19 +1,20 @@
 "use client";
 import { useState, useRef } from "react";
-import 'swiper/css';
 import Image from "next/image";
 import { RightArrow } from "../components/Icons";
 import SimpleHero from "../components/SimpleHero";
-import { register } from 'swiper/element/bundle';
-import "../../public/css/swiper.css";
 
+import "../../public/css/swiper.css";
+import 'swiper/css';
+import { register } from 'swiper/element/bundle';
+import { SwiperRef } from "@/types/swiper";
 
 register();
 
 const SpacesPage = () => {
   const [activeElement, setActiveElement] = useState("desks");
 
-  const swiperElRef = useRef(null);
+  const swiperElRef = useRef<SwiperRef>(null);
 
   const handleNext = () => {
     if (!swiperElRef.current) return;
@@ -177,9 +178,8 @@ const SpacesPage = () => {
 
             <swiper-container
               ref={swiperElRef}
-              slides-per-view="1.8"
-              space-between="30"
-              navigation="false"
+              slides-per-view={1.8}
+              space-between={30}
             >
               <swiper-slide>
                 <Image src="/images/Court-house.jpg" alt="placeholder image" className="object-cover h-full w-full aspect-square" width="500" height="500" loading="lazy"/>

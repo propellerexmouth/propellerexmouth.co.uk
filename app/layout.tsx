@@ -7,12 +7,6 @@ const archia = localFont({
   display: "swap",
 });
 
-declare namespace JSX {
-  interface IntrinsicElements {
-    'swiper-container': any
-  }
-}
-
 import Footer from "./components/Footer";
 import PreHeader from "./components/PreHeader";
 import Header from "./components/Header";
