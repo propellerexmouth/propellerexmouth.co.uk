@@ -21,7 +21,7 @@ const SpacesCard = ({ className = '', title, content, href, isAvailable = false,
                 </Link>
             </div>
             <div className="w-full md:max-w-[33.333%] lg:max-w-none">
-                <Image {...image} className="w-full h-full object-cover lg:h-auto lg:object-fill" />
+                <Image {...image} className="w-full h-full object-cover lg:h-auto lg:object-fill" alt="placeholder"/>
             </div>
             {isAvailable && <div className="flex items-stretch bottom-0 left-0">
                 <div className="bg-white py-1 px-4">
