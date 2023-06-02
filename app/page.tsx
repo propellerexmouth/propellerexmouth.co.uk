@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import SpacesSection from "./components/SpacesSection";
+import MemberBenefits from "./components/MemberBenefits";
 
 const HomePage = () => {
   return (
@@ -99,6 +100,7 @@ const HomePage = () => {
         </div>
       </div>
       <SpacesSection />
+      <MemberBenefits title="Member benefits" />
     </div>
   );
 };

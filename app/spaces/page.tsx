@@ -3,6 +3,7 @@ import { useState, useRef } from "react";
 import Image from "next/image";
 import { RightArrow } from "../components/Icons";
 import SimpleHero from "../components/SimpleHero";
+import MemberBenefits from "../components/MemberBenefits";
 
 import "../../public/css/swiper.css";
 import 'swiper/css';
@@ -28,37 +29,34 @@ const SpacesPage = () => {
         />
         <div className="bg-secondary-100">
           <div className="mx-auto w-full max-w-6xl px-6 py-20 flex align-top justify-between flex-col md:flex-row">
-            <div className="w-full md:w-[20%]">
+            <div className="w-full md:w-[25%]">
 
               <div className={activeElement === "desks" ? "group is-active block cursor-pointer" : "group block cursor-pointer"} onClick={() => setActiveElement("desks")}>
-                <div className="flex items-center justify-between p-4 mb-4 bg-white text-black border border-white group-[.is-active]:bg-primary-900 group-[.is-active]:text-white group-[.is-active]:border-primary-900">
+                <div className="flex items-center justify-between p-6 mb-4 bg-white text-black border border-white group-[.is-active]:bg-primary-900 group-[.is-active]:text-white group-[.is-active]:border-primary-900">
                   <span className="font-bold">Desks</span>
                   <RightArrow className="w-6 h-6 group-[.is-active]:fill-white fill-primary-900 group-[.is-active]:rotate-90 group-[.is-active]:md:rotate-0 transition-all"/>
                 </div>
               </div>
 
               <div className={activeElement === "offices" ? "group is-active block cursor-pointer" : "group block cursor-pointer"} onClick={() => setActiveElement("offices")}>
-                <div className="flex items-center justify-between p-4 mb-4 bg-white text-black border border-white group-[.is-active]:bg-primary-900 group-[.is-active]:text-white group-[.is-active]:border-primary-900">
+                <div className="flex items-center justify-between p-6 mb-4 bg-white text-black border border-white group-[.is-active]:bg-primary-900 group-[.is-active]:text-white group-[.is-active]:border-primary-900">
                   <span className="font-bold">Offices</span>
                   <RightArrow className="w-6 h-6 group-[.is-active]:fill-white fill-primary-900 group-[.is-active]:rotate-90 group-[.is-active]:md:rotate-0 transition-all"/>
                 </div>
               </div>
 
               <div className={activeElement === "meetings" ? "group is-active block cursor-pointer" : "group block cursor-pointer"} onClick={() => setActiveElement("meetings")}>
-                <div className="flex items-center justify-between p-4 mb-4 bg-white text-black border border-white group-[.is-active]:bg-primary-900 group-[.is-active]:text-white group-[.is-active]:border-primary-900">
+                <div className="flex items-center justify-between p-6 mb-4 bg-white text-black border border-white group-[.is-active]:bg-primary-900 group-[.is-active]:text-white group-[.is-active]:border-primary-900">
                   <span className="font-bold">Meeting Spaces</span>
                   <RightArrow className="w-6 h-6 group-[.is-active]:fill-white fill-primary-900 group-[.is-active]:rotate-90 group-[.is-active]:md:rotate-0 transition-all"/>
                 </div>
               </div>
             </div>
 
-            <div className="w-full md:w-[70%] mt-12 md:mt-0">
+            <div className="w-full md:w-[68%] mt-12 md:mt-0">
 
               <div className={activeElement === "desks" ? "group is-active block" : "group block"}>
                 <div className="group-[.is-active]:opacity-100 group-[.is-active]:max-h-screen max-h-0 opacity-0 overflow-hidden transition-opacity duration-500">
-                  <h4 className="mb-10 text-xl tracking-tight sm:text-2xl">
-                    Desks
-                  </h4>
                   <h4 className="mb-10 text-xl tracking-tight sm:text-2xl">
                     Work alongside other entrepreneurs, creatives and engineers in our shared workspace
                   </h4>
@@ -73,17 +71,17 @@ const SpacesPage = () => {
                   </p>
                   <div className="flex items-center justify-between flex-wrap mb-4">
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
-                      <small className="mb-4 font-bold text-primary-900 uppercase">
-                        Pricing
-                      </small>
+                      <p className="mb-4 text-lg font-bold text-primary-900">
+                        Monthly dedicated desk
+                      </p>
                       <p className="text-xl">
                         £220 per month*
                       </p>
                     </div>
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
-                      <small className="mb-4 font-bold text-primary-900 uppercase">
+                      <p className="mb-4 text-lg font-bold text-primary-900">
                         Daily hot desk
-                      </small>
+                      </p>
                       <p className="text-xl">
                         £15 per day*
                       </p>
@@ -96,10 +94,7 @@ const SpacesPage = () => {
               <div className={activeElement === "offices" ? "group is-active block" : "group block"}>
                 <div className="group-[.is-active]:opacity-100 group-[.is-active]:max-h-screen max-h-0 opacity-0 overflow-hidden transition-opacity duration-500">
                   <h4 className="mb-10 text-xl tracking-tight sm:text-2xl">
-                    Offices
-                  </h4>
-                  <h4 className="mb-10 text-xl tracking-tight sm:text-2xl">
-                    Work alongside other entrepreneurs, creatives and engineers in our shared workspace
+                    Making the most of our shared facilities, while maintaining some privacy for your team
                   </h4>
                   <p className="mb-4">
                     Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit ation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -112,19 +107,19 @@ const SpacesPage = () => {
                   </p>
                   <div className="flex items-center justify-between flex-wrap mb-4">
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
-                      <small className="mb-4 font-bold text-primary-900 uppercase">
-                        Pricing
-                      </small>
+                      <p className="mb-4 text-lg font-bold text-primary-900">
+                        4 person office available now
+                      </p>
                       <p className="text-xl">
-                        £220 per month*
+                        Please enquire
                       </p>
                     </div>
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
-                      <small className="mb-4 font-bold text-primary-900 uppercase">
-                        Daily hot desk
-                      </small>
+                      <p className="mb-4 text-lg font-bold text-primary-900">
+                        8 person office available now
+                      </p>
                       <p className="text-xl">
-                        £15 per day*
+                        Please enquire
                       </p>
                     </div>
                   </div>
@@ -135,10 +130,7 @@ const SpacesPage = () => {
               <div className={activeElement === "meetings" ? "group is-active block" : "group block"}>
                 <div className="group-[.is-active]:opacity-100 group-[.is-active]:max-h-screen max-h-0 opacity-0 overflow-hidden transition-opacity duration-500">
                   <h4 className="mb-10 text-xl tracking-tight sm:text-2xl">
-                    Meetings
-                  </h4>
-                  <h4 className="mb-10 text-xl tracking-tight sm:text-2xl">
-                    Work alongside other entrepreneurs, creatives and engineers in our shared workspace
+                    Our meeting room is set up ready for in person and virtual meetings
                   </h4>
                   <p className="mb-4">
                     Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit ation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -151,19 +143,19 @@ const SpacesPage = () => {
                   </p>
                   <div className="flex items-center justify-between flex-wrap mb-4">
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
-                      <small className="mb-4 font-bold text-primary-900 uppercase">
-                        Pricing
-                      </small>
+                      <p className="mb-4 text-lg font-bold text-primary-900">
+                        Per hour
+                      </p>
                       <p className="text-xl">
-                        £220 per month*
+                        from £20*
                       </p>
                     </div>
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
-                      <small className="mb-4 font-bold text-primary-900 uppercase">
-                        Daily hot desk
-                      </small>
+                      <p className="mb-4 text-lg font-bold text-primary-900">
+                        Per day
+                      </p>
                       <p className="text-xl">
-                        £15 per day*
+                        from £100*
                       </p>
                     </div>
                   </div>
@@ -199,53 +191,7 @@ const SpacesPage = () => {
           </div>
         </div>
 
-        <div className="mx-auto w-full max-w-6xl px-6 my-20">
-          <div className="flex flex-col w-full items-center">
-            <h1 className="text-primary-900 text-4xl font-bold mb-12">
-              Member benefits
-            </h1>
-            <div className="flex justify-evenly flex-wrap w-full mb-12">
-
-              <div className="text-center w-full md:w-[30%] my-8">
-                <Image src="/images/icons/clock.png" alt="clock" className="object-contain mx-auto h-16 w-16 aspect-square" width="100" height="100" loading="lazy"/>
-                <p className="p-4 text-sm">
-                  24 hour access to desks, sofas, meeting spaces, kitchen and internet
-                </p>
-              </div>
-              <div className="text-center w-full md:w-[30%] my-8">
-                <Image src="/images/icons/meteor-rain.png" alt="meteor rain" className="object-contain mx-auto h-16 w-16 aspect-square" width="100" height="100" loading="lazy"/>
-                <p className="p-4 text-sm">
-                  Time with other entrepreneurs that you can share ideas with
-                </p>
-              </div>
-              <div className="text-center w-full md:w-[30%] my-8">
-                  <Image src="/images/icons/wave.png" alt="wave" className="object-contain mx-auto h-16 w-16 aspect-square" width="100" height="100" loading="lazy"/>
-                <p className="p-4 text-sm">
-                  Free access to talks and lectures from successful entrepreneurs and makers
-                </p>
-              </div>
-              <div className="text-center w-full md:w-[30%] my-8">
-                <Image src="/images/icons/coffee-cup.png" alt="coffee-cup" className="object-contain mx-auto h-16 w-16 aspect-square" width="100" height="100" loading="lazy"/>
-                <p className="p-4 text-sm">
-                  Free tea and coffee and biscuits
-                </p>
-              </div>
-              <div className="text-center w-full md:w-[30%] my-8">
-                <Image src="/images/icons/sunrise.png" alt="sunrise" className="object-contain mx-auto h-16 w-16 aspect-square" width="100" height="100" loading="lazy"/>
-                <p className="p-4 text-sm">
-                  An awesome location, close to the sea, estuary, bars, shops and transport
-                </p>
-              </div>
-              <div className="text-center w-full md:w-[30%] my-8">
-                <Image src="/images/icons/cycling.png" alt="cycling" className="object-contain mx-auto h-16 w-16 aspect-square" width="100" height="100" loading="lazy"/>
-                <p className="p-4 text-sm">
-                  Storage lockers, showers and secure bike storage
-                </p>
-              </div>
-
-            </div>
-          </div>
-        </div>
+        <MemberBenefits title="Member benefits" />
 
       </div>
   );

@@ -7,6 +7,7 @@ import SpacesSection from "../components/SpacesSection";
 
 import "../../public/css/swiper.css";
 import 'swiper/css';
+import "../../public/css/scrollbar.css";
 import { register } from 'swiper/element/bundle';
 import { SwiperRef } from "@/types/swiper";
 
@@ -29,7 +30,7 @@ const CommunityPage = () => {
     <div className="bg-white w-full">
       <div className="w-full relative overflow-hidden">
         <div className="max-w-5xl absolute top-0 left-0 w-full h-full sm:max-w-5xl lg:max-w-none">
-          <Image src="/images/DSC_0112.jpg" alt="App screenshot" width={1080} height={720} className="object-cover h-full w-[60rem]" />
+          <Image src="/images/Community.jpg" alt="App screenshot" width={1080} height={720} className="object-cover h-full w-[60rem]" />
         </div>
         <div className="max-w-6xl px-6 mx-auto flex justify-end items-center">
           <div className="mx-auto w-full max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8 my-20 z-20 bg-primary-900 px-10 py-32">
@@ -43,7 +44,7 @@ const CommunityPage = () => {
         </div>
       </div>
 
-      <div className="my-32 w-full">
+      <div className="py-32 w-full">
         <div className="max-w-xl px-6 mx-auto text-center mb-8">
           <h3 className="text-primary-900 text-2xl font-bold mb-8">
             Existing members
@@ -52,7 +53,7 @@ const CommunityPage = () => {
             Existing members are drawn from a mixture of technical and creative backgrounds, but we all work within small businesses that have the capacity to grow.
           </p>
         </div>
-        <div className="flex items-stretch justify-start w-full overflow-scroll">
+        <div className="flex items-stretch justify-start w-full overflow-y-hidden overflow-x-scroll custom-scrollbar pb-4">
           <div className="block aspect-video w-fit min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
             <Image src="/images/inconf.png" alt="App screenshot" width="200" height="200" className="object-contain h-full w-full" loading="lazy"/>
           </div>
@@ -224,13 +225,13 @@ const CommunityPage = () => {
       
       <SpacesSection title="Spaces"/>
 
-      <div className="my-32 w-full">
+      <div className="py-32 w-full">
         <div className="max-w-xl px-6 mx-auto text-center mb-8">
           <h3 className="text-primary-900 text-2xl font-bold mb-8">
             Local businesses we love
           </h3>
         </div>
-        <div className="flex items-stretch justify-start w-full overflow-scroll">
+        <div className="flex items-stretch justify-start w-full overflow-y-hidden overflow-x-scroll custom-scrollbar pb-4">
           <div className="block aspect-video w-fit min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
             <Image src="/images/cabin.png" alt="Cabin Coffee Logo" width="200" height="200" className="object-contain h-full w-full" loading="lazy"/>
           </div>
