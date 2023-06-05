@@ -1,30 +1,33 @@
 import React from "react";
-import Link from "next/link";
+import { CommunityIcon, SpacesIcon } from "./Icons";
+import NavLink from "./NavLink";
 
-const NavLinks = ({ incHome = false, incContact = false }: { incHome: boolean; incContact: boolean }) => {
+const NavLinks = ({ incHome = false, incContact = false, showIcons = true }: { incHome: boolean; incContact: boolean, showIcons: boolean }) => {
   return (
     <>
       {incHome && (
-        <Link className="hover:underline" href="/">
+        <NavLink href="/">
           Home
-        </Link>
+        </NavLink>
       )}
-      <Link className="hover:underline" href="/spaces">
-        Spaces
-      </Link>
-      <Link className="hover:underline" href="/about">
-        About
-      </Link>
-      <Link className="hover:underline" href="/community">
+      <NavLink href="/community">
+        {showIcons && <CommunityIcon className="w-6 h-6 inline-block fill-current" />}
         Community
-      </Link>
-      <Link className="hover:underline" href="/events">
+      </NavLink>
+      <NavLink href="/spaces">
+        {showIcons && <SpacesIcon className="w-6 h-6 inline-block fill-current" />}
+        Spaces
+      </NavLink>
+      <NavLink href="/about">
+        About
+      </NavLink>
+      <NavLink href="/events">
         Events
-      </Link>
+      </NavLink>
       {incContact && (
-        <Link className="hover:underline" href="/contact">
+        <NavLink href="/contact">
           Contact
-        </Link>
+        </NavLink>
       )}
     </>
   );
