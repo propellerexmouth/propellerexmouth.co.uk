@@ -1,5 +1,21 @@
-.spaces-swiper .swiper,
-.spaces-swiper swiper-container {
+/* Spaces Page */
+body .swiper,
+body swiper-container {
     overflow: visible;
     cursor: grab;
+}
+
+.spaces-swiper swiper-container {
+    width: 34rem;
+    margin: 0 auto 0 0;
+}
+
+.swiper-slide-next .community-slide {
+    transform: scale(0.75);
+}
+.swiper-slide-prev .community-slide {
+    transform: scale(0.75);
+}
+swiper-slide .community-slide {
+    transition: all 1s ease 0.3s;
 }

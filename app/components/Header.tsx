@@ -22,9 +22,9 @@ const Header = () => {
       <header className="flex w-full relative">
         <div id="desktop-header-container" className="mx-auto w-full max-w-6xl p-6 ">
           <div className="flex justify-between items-center gap-12">
-            <h1 className="flex text-4xl items-center z-[60]">
+            <div className="flex text-4xl items-center z-[60]">
               <DynamicLogo />
-            </h1>
+            </div>
             <button onClick={toggleMenu} className="block lg:hidden z-[60]">{isOpen ? <CloseIcon className="h-12 w-12 px-2 py-1 stroke-2 cursor-pointer font-bold" /> : <MenuIcon className="h-12 w-12 px-2 py-1 stroke-2 cursor-pointer font-bold" />}</button>
             <div className={`fixed flex flex-col bg-white text-center z-50 top-0 left-0 right-0 h-full transition duration-300 -translate-x-full lg:static lg:translate-x-0  ${isOpen ? 'translate-x-0' : ''}`}>
               <div className="h-[96px] flex-shrink-0 lg:hidden"></div>
