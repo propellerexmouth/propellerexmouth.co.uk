@@ -68,7 +68,7 @@ const HomePage = () => {
         </div>
         <div className="flex flex-col w-full items-center mt-10 mb-20">
           <h1 className="text-primary-900 text-4xl font-bold mb-12">The Propeller Community</h1>
-          <div className="flex justify-evenly w-full mb-12">
+          <div className="flex justify-evenly w-full mb-12 flex-col lg:flex-row">
             <div className="flex items-center">
               <div className="flex items-center p-4 bg-secondary-100 text-secondary-900 bold text-3xl h-24 w-24 justify-center">
                 <p className="">Icon</p>

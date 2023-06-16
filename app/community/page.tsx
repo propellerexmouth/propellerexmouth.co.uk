@@ -29,8 +29,8 @@ const CommunityPage = () => {
   return (
     <div className="bg-white w-full">
       <div className="w-full relative overflow-hidden">
-        <div className="max-w-5xl absolute top-0 left-0 w-full h-full sm:max-w-5xl lg:max-w-none">
-          <Image src="/images/Community.jpg" alt="App screenshot" width={1080} height={720} className="object-cover h-full w-[60rem]" />
+        <div className="max-w-5xl absolute top-0 left-0 w-full h-full sm:min-w-[calc(32rem_+_40vw)]">
+          <Image src="/images/Community.jpg" alt="App screenshot" width={1080} height={720} className="object-cover h-full w-full" />
         </div>
         <div className="max-w-6xl px-6 mx-auto flex justify-end items-center">
           <div className="mx-auto w-full max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8 my-20 z-20 bg-primary-900 px-10 py-32">
@@ -191,7 +191,7 @@ const CommunityPage = () => {
           <h3 className="text-primary-900 text-2xl font-bold mb-12">
             What’s on for members?
           </h3>
-          <div className="flex justify-evenly w-full mb-12">
+          <div className="flex justify-evenly w-full mb-12 flex-col lg:flex-row">
               <div className="flex items-center">
                 <div className="flex items-center p-4 bg-secondary-100 text-secondary-900 bold text-3xl h-24 w-24 justify-center">
                   <p>Icon</p>
