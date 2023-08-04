@@ -2,7 +2,7 @@ import React from "react";
 import { CommunityIcon, SpacesIcon } from "./Icons";
 import NavLink from "./NavLink";
 
-const NavLinks = ({ incHome = false, incContact = false, showIcons = true }: { incHome: boolean; incContact: boolean, showIcons: boolean }) => {
+const NavLinks = ({ incHome = false, incContact = true, showIcons = true }: { incHome: boolean; incContact: boolean, showIcons: boolean }) => {
   return (
     <>
       {incHome && (
@@ -21,11 +21,8 @@ const NavLinks = ({ incHome = false, incContact = false, showIcons = true }: { i
       <NavLink href="/about">
         About
       </NavLink>
-      <NavLink href="/events">
-        Events
-      </NavLink>
       {incContact && (
-        <NavLink href="/contact">
+        <NavLink className="block lg:hidden" href="/contact">
           Contact
         </NavLink>
       )}

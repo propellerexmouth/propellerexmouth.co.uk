@@ -21,7 +21,7 @@ const Footer = () => {
         <div id="contact-details" className="space-y-8 ">
           <div id="email" className="flex space-x-2">
             <EmailIcon className="flex-shrink-0" />
-            <span className="not-italic">team@propellerexmouth.co.uk</span>
+            <span className="not-italic"><a href="mailto:hello@propellerexmouth.co.uk">hello@propellerexmouth.co.uk</a></span>
           </div>
           <div id="address" className="flex space-x-2">
             <PinIcon className="flex-shrink-0" />
@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
           <div id="phone" className="flex space-x-2">
             <PhoneIcon className="flex-shrink-0" />
-            <span className="not-italic">01395 263509</span>
+            <span className="not-italic"><a href="tel:01395263509">01395 263509</a></span>
           </div>
         </div>
       </div>

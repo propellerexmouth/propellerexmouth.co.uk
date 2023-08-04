@@ -3,6 +3,7 @@ import { useState, useRef } from "react";
 import Image from "next/image";
 import { RightArrow } from "../components/Icons";
 import SimpleHero from "../components/SimpleHero";
+import OrdalocaBtn from "../components/OrdalocaBtn";
 import MemberBenefits from "../components/MemberBenefits";
 
 import "../../public/css/swiper.css";
@@ -27,6 +28,7 @@ const SpacesPage = () => {
         <SimpleHero
           content="Desk space, offices and meeting rooms for building businesses that can scale"
         />
+
         <div className="bg-secondary-100">
           <div className="mx-auto w-full max-w-6xl px-6 py-20 flex align-top justify-between flex-col md:flex-row">
             <div className="w-full md:w-[25%]">
@@ -67,7 +69,7 @@ const SpacesPage = () => {
                     Pricing
                   </h4>
                   <p className="mb-4">
-                    *Prices are exclusive of VAT
+                    *Prices are inclusive of VAT
                   </p>
                   <div className="flex items-center justify-between flex-wrap mb-4">
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
@@ -75,16 +77,18 @@ const SpacesPage = () => {
                         Monthly dedicated desk
                       </p>
                       <p className="text-xl">
-                        £220 per month*
+                        £264 per month*
                       </p>
+                      <OrdalocaBtn className="mt-8" url="https://orda.to/5-5"/>
                     </div>
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
                       <p className="mb-4 text-lg font-bold text-primary-900">
                         Daily hot desk
                       </p>
                       <p className="text-xl">
-                        £15 per day*
+                        £18 per day*
                       </p>
+                      <OrdalocaBtn className="mt-8" url="https://orda.to/5-1"/>
                     </div>
                   </div>
                   <a className="underline text-primary-900" href="/contact">Get in touch</a>
@@ -103,7 +107,7 @@ const SpacesPage = () => {
                     Pricing
                   </h4>
                   <p className="mb-4">
-                    *Prices are exclusive of VAT
+                    *Prices are inclusive of VAT
                   </p>
                   <div className="flex items-center justify-between flex-wrap mb-4">
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
@@ -111,7 +115,7 @@ const SpacesPage = () => {
                         4 person office available now
                       </p>
                       <p className="text-xl">
-                        Please enquire
+                        <a href="/contact">Enquire now</a>
                       </p>
                     </div>
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
@@ -119,7 +123,7 @@ const SpacesPage = () => {
                         8 person office available now
                       </p>
                       <p className="text-xl">
-                        Please enquire
+                        <a href="/contact">Enquire now</a>
                       </p>
                     </div>
                   </div>
@@ -139,7 +143,7 @@ const SpacesPage = () => {
                     Pricing
                   </h4>
                   <p className="mb-4">
-                    *Prices are exclusive of VAT
+                    *Prices are inclusive of VAT
                   </p>
                   <div className="flex items-center justify-between flex-wrap mb-4">
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
@@ -147,16 +151,18 @@ const SpacesPage = () => {
                         Per hour
                       </p>
                       <p className="text-xl">
-                        from £20*
+                        from £30*
                       </p>
+                      <OrdalocaBtn className="mt-8" url="https://orda.to/5-3"/>
                     </div>
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
                       <p className="mb-4 text-lg font-bold text-primary-900">
                         Per day
                       </p>
                       <p className="text-xl">
-                        from £100*
+                        from £114*
                       </p>
+                      <OrdalocaBtn className="mt-8" url="https://orda.to/5-3"/>
                     </div>
                   </div>
                   <a className="underline text-primary-900" href="/contact">Get in touch</a>

@@ -30,7 +30,7 @@ const Header = () => {
               <div className="h-[96px] flex-shrink-0 lg:hidden"></div>
               <div className="overflow-auto p-12 lg:p-0">
                 <nav className="mb-8 lg:mb-0 flex flex-col lg:flex-row items-center justify-center gap-12 text-xl lg:text-base">
-                  <NavLinks incHome={false} incContact={false} showIcons={true} />
+                  <NavLinks incHome={false} incContact={true} showIcons={true} />
                 </nav>
                 <div className="lg:hidden mt-auto"><SocialLinks size="lg" /></div>
               </div>

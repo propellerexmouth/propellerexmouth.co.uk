@@ -71,7 +71,9 @@ const HomePage = () => {
           <div className="flex justify-evenly w-full mb-12 flex-col lg:flex-row">
             <div className="flex items-center">
               <div className="flex items-center p-4 bg-secondary-100 text-secondary-900 bold text-3xl h-24 w-24 justify-center">
-                <p className="">Icon</p>
+                  <video className="mx-auto" width="75" height="75" autoPlay loop muted>
+                    <source src="/videos/boots.mp4" type="video/mp4"/>
+                  </video>
               </div>
               <div className="p-4 text-sm">
                 <p>Propeller is not just a co-working space, it&apos;s a not-for-profit, volunteer-run venture.</p>
@@ -79,7 +81,9 @@ const HomePage = () => {
             </div>
             <div className="flex items-center">
               <div className="flex items-center p-4 bg-secondary-100 text-secondary-900 bold text-3xl h-24 w-24 justify-center">
-                <p className="">Icon</p>
+                <video className="mx-auto" width="75" height="75" autoPlay loop muted>
+                  <source src="/videos/burger.mp4" type="video/mp4"/>
+                </video>
               </div>
               <div className="p-4 text-sm">
                 <p>We are building a community of like-minded people and businesses that share ideas.</p>
@@ -87,7 +91,9 @@ const HomePage = () => {
             </div>
             <div className="flex items-center">
               <div className="flex items-center p-4 bg-secondary-100 text-secondary-900 bold text-3xl h-24 w-24 justify-center">
-                <p className="">Icon</p>
+                <video className="mx-auto" width="75" height="75" autoPlay loop muted>
+                  <source src="/videos/social.mp4" type="video/mp4"/>
+                </video>
               </div>
               <div className="p-4 text-sm">
                 <p>Our focus is on promoting and growing creative and tech based industries in Exmouth.</p>
