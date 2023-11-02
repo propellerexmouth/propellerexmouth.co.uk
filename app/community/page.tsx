@@ -1,5 +1,5 @@
 "use client";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
 import { RightArrow } from "../components/Icons";
 import Link from "next/link";
@@ -22,14 +22,31 @@ register();
 const CommunityPage = () => {
   const swiperElRef = useRef<SwiperRef>(null);
 
+  const checkArrows = (item) => {
+    if (item.swiper.activeIndex == 0) {
+      setPrevActive(!prevActive);
+    } else {
+      setPrevActive(true);
+    }
+    if (item.swiper.activeIndex = item.swiper.slides.length) {
+      setNextActive(!nextActive);
+    } else {
+      setNextActive(true);
+    }
+  }
+
+  const [prevActive, setPrevActive] = useState(false);
+  const [nextActive, setNextActive] = useState(true);
+
   const handleNext = () => {
     if (!swiperElRef.current) return;
     swiperElRef.current.swiper.slideNext();
+    checkArrows(swiperElRef.current);
   };
-
   const handlePrev = () => {
     if (!swiperElRef.current) return;
     swiperElRef.current.swiper.slidePrev();
+    checkArrows(swiperElRef.current);
   };
 
   return (
@@ -95,7 +112,7 @@ const CommunityPage = () => {
             slides-per-view={1}
             space-between={30}
             centered-slides={true}
-            loop={true}
+            loop={false}
             speed={1000}
             watch-slides-progress={true}
           >
@@ -124,10 +141,7 @@ const CommunityPage = () => {
                   <div className="w-full lg:w-[60%]">
                     <Image src="/images/ordaloca.png" alt="Ordaloca" width="200" height="200" className="object-contain h-8 w-auto mb-8" loading="lazy"/>
                     <p className="mb-8">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Amazing working environment and place to hot desk in a great location. Friendly people and positive vibes. Highly recommended!
                     </p>
                     <Link href="https://ordaloca.com" className="text-primary-900 underline text-xl">
                       ordaloca.com
@@ -163,30 +177,27 @@ const CommunityPage = () => {
                 ></div>
                 <div className="flex flex-col lg:flex-row items-center justify-between bg-white p-8">
                   <div className="w-full lg:w-[60%]">
-                    <Image src="/images/ordaloca.png" alt="Ordaloca" width="200" height="200" className="object-contain h-8 w-auto mb-8" loading="lazy"/>
+                    <Image src="/pixelfridge.svg" alt="PixelFridge" width="200" height="200" className="object-contain h-8 w-auto mb-8" loading="lazy"/>
                     <p className="mb-8">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Excellent place to work! A truly friendly, welcoming and helpful community. Great for a day's hot desk by the beach or permanent office space. Nice shower and indoor bike storage too.
                     </p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                    <Link href="https://ordaloca.com" className="text-primary-900 underline text-xl">
-                      ordaloca.com
+                    <Link href="https://pixelfridge.digital" className="text-primary-900 underline text-xl">
+                      pixelfridge.digital
                     </Link>
                   </div>
                   <div className="w-full lg:w-[30%] flex justify-center lg:block mt-8 lg:mt-0">
-                    <Image src="/images/team/Jim-Hill.jpg" alt="Jim Hill" width="200" height="200" className="object-contain h-40 w-40" loading="lazy"/>
-                    <Image src="/images/team/Louis-Gillies.jpg" alt="Louis Gillies" width="200" height="200" className="object-contain h-40 w-40 -mt-8 lg:ml-auto lg:mr-0" loading="lazy"/>
+                    <Image src="/images/team/Laura-Gregory.jpg" alt="Laura Gregory" width="200" height="200" className="object-contain h-40 w-40" loading="lazy"/>
+                    <Image src="/images/team/Nick-Murray.jpg" alt="Nick Murray" width="200" height="200" className="object-contain h-40 w-40 -mt-8 lg:ml-auto lg:mr-0" loading="lazy"/>
                   </div>
                 </div>
               </div>
             </swiper-slide>
           </swiper-container>
 
-          <div className="next-arrow w-10 h-10 absolute top-1/2 right-full -translate-y-1/2 fill-primary-900 z-10 cursor-pointer" onClick={handlePrev}>
+          <div className={(!prevActive ? 'opacity-0' : 'opacity-100') + " next-arrow w-10 h-10 absolute top-1/2 right-full -translate-y-1/2 fill-primary-900 z-10 cursor-pointer transition-all duration-300"} onClick={handlePrev}>
             <RightArrow className="w-10 h-10 fill-primary-900 rotate-180"/>
           </div>
-          <div className="next-arrow w-10 h-10 absolute top-1/2 left-full -translate-y-1/2 fill-primary-900 z-10 cursor-pointer" onClick={handleNext}>
+          <div className={(!nextActive ? 'opacity-0' : 'opacity-100') + " next-arrow w-10 h-10 absolute top-1/2 left-full -translate-y-1/2 fill-primary-900 z-10 cursor-pointer transition-all duration-300"} onClick={handleNext}>
             <RightArrow className="w-10 h-10 fill-primary-900"/>
           </div>
         </div>

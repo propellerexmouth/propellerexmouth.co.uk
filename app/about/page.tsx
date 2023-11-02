@@ -54,7 +54,6 @@ const AboutPage = () => {
               Building and community manager
             </h4>
             <p>
-              Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
             </p>
           </div>
         </div> */}
@@ -71,7 +70,6 @@ const AboutPage = () => {
               Founding director (Volunteer)
             </h4>
             {/* <p>
-              Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
             </p> */}
           </div>
         </div>
@@ -88,7 +86,6 @@ const AboutPage = () => {
               Founding director (Volunteer)
             </h4>
             {/* <p>
-              Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
             </p> */}
           </div>
         </div>
@@ -105,7 +102,6 @@ const AboutPage = () => {
               Founding member (Volunteer)
             </h4>
             {/* <p>
-              Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
             </p> */}
           </div>
         </div>
@@ -122,7 +118,6 @@ const AboutPage = () => {
               Founding director (Volunteer)
             </h4>
             {/* <p>
-              Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
             </p> */}
           </div>
         </div>

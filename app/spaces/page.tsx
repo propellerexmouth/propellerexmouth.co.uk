@@ -63,7 +63,7 @@ const SpacesPage = () => {
                     Work alongside other entrepreneurs, creatives and engineers in our shared workspace
                   </h4>
                   <p className="mb-4">
-                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit ation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Monthly Desk Hire is the perfect solution for entrepreneurs or small business owners who need workspace without the hassle of office setup and long-term rentals.
                   </p>
                   <h4 className="mb-4 font-bold uppercase">
                     Pricing
@@ -101,7 +101,7 @@ const SpacesPage = () => {
                     Making the most of our shared facilities, while maintaining some privacy for your team
                   </h4>
                   <p className="mb-4">
-                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit ation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Whether you need an individual desk, a team space, or a larger private office, our wide selection of desks and chair options are tailored to fit your needs. With our monthly desk hire, you can enjoy all the benefits of a professional workspace without any of the long-term commitment.
                   </p>
                   <h4 className="mb-4 font-bold uppercase">
                     Pricing
@@ -137,7 +137,9 @@ const SpacesPage = () => {
                     Our meeting room is set up ready for in person and virtual meetings
                   </h4>
                   <p className="mb-4">
-                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit ation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    The John Petty Meeting Room comfortably sits 10 people. It's equipped with comfortable seating and a large table, as well as a wired/wireless TV connection, Logitech conference cam and a whiteboard.
+                    The room also comes with access to our hi-speed WiFi and complimentary refreshments.
+                    Whether it's a collaborative brainstorming session or a private gathering, the Propeller meeting room is the ideal space for any occasion.
                   </p>
                   <h4 className="mb-4 font-bold uppercase">
                     Pricing
