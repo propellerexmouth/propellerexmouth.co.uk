@@ -22,7 +22,7 @@ register();
 const CommunityPage = () => {
   const swiperElRef = useRef<SwiperRef>(null);
 
-  const checkArrows = (item) => {
+  const checkArrows = (item: any) => {
     if (item.swiper.activeIndex == 0) {
       setPrevActive(!prevActive);
     } else {
@@ -179,7 +179,7 @@ const CommunityPage = () => {
                   <div className="w-full lg:w-[60%]">
                     <Image src="/pixelfridge.svg" alt="PixelFridge" width="200" height="200" className="object-contain h-8 w-auto mb-8" loading="lazy"/>
                     <p className="mb-8">
-                      Excellent place to work! A truly friendly, welcoming and helpful community. Great for a day's hot desk by the beach or permanent office space. Nice shower and indoor bike storage too.
+                      Excellent place to work! A truly friendly, welcoming and helpful community. Great for a day&apos;s hot desk by the beach or permanent office space. Nice shower and indoor bike storage too.
                     </p>
                     <Link href="https://pixelfridge.digital" className="text-primary-900 underline text-xl">
                       pixelfridge.digital

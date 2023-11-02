@@ -137,9 +137,9 @@ const SpacesPage = () => {
                     Our meeting room is set up ready for in person and virtual meetings
                   </h4>
                   <p className="mb-4">
-                    The John Petty Meeting Room comfortably sits 10 people. It's equipped with comfortable seating and a large table, as well as a wired/wireless TV connection, Logitech conference cam and a whiteboard.
+                    The John Petty Meeting Room comfortably sits 10 people. It&apos;s equipped with comfortable seating and a large table, as well as a wired/wireless TV connection, Logitech conference cam and a whiteboard.
                     The room also comes with access to our hi-speed WiFi and complimentary refreshments.
-                    Whether it's a collaborative brainstorming session or a private gathering, the Propeller meeting room is the ideal space for any occasion.
+                    Whether it&apos;s a collaborative brainstorming session or a private gathering, the Propeller meeting room is the ideal space for any occasion.
                   </p>
                   <h4 className="mb-4 font-bold uppercase">
                     Pricing
