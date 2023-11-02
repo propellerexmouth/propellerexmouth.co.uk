@@ -42,7 +42,7 @@ const AboutPage = () => {
           The Team
         </h4>
 
-        <div className="flex items-center md:items-stretch justify-between mt-8 flex-col md:flex-row">
+        {/* <div className="flex items-center justify-between mt-8 flex-col md:flex-row">
           <div className="w-fit md:w-[18%]">
             <Image src="/images/team/Charlie-Tilbury.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
           </div>
@@ -57,9 +57,9 @@ const AboutPage = () => {
               Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
             </p>
           </div>
-        </div>
+        </div> */}
 
-        <div className="flex items-center md:items-stretch justify-between mt-8 flex-col md:flex-row">
+        <div className="flex items-center justify-between mt-8 flex-col md:flex-row">
           <div className="w-fit md:w-[18%]">
             <Image src="/images/team/Nathan-Budd.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
           </div>
@@ -70,13 +70,13 @@ const AboutPage = () => {
             <h4 className="mb-4 text-xl tracking-tight sm:text-2xl">
               Founding director (Volunteer)
             </h4>
-            <p>
+            {/* <p>
               Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
+            </p> */}
           </div>
         </div>
 
-        <div className="flex items-center md:items-stretch justify-between mt-8 flex-col md:flex-row">
+        <div className="flex items-center justify-between mt-8 flex-col md:flex-row">
           <div className="w-fit md:w-[18%]">
             <Image src="/images/team/Jim-Hill.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
           </div>
@@ -87,13 +87,13 @@ const AboutPage = () => {
             <h4 className="mb-4 text-xl tracking-tight sm:text-2xl">
               Founding director (Volunteer)
             </h4>
-            <p>
+            {/* <p>
               Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
+            </p> */}
           </div>
         </div>
 
-        <div className="flex items-center md:items-stretch justify-between mt-8 flex-col md:flex-row">
+        <div className="flex items-center justify-between mt-8 flex-col md:flex-row">
           <div className="w-fit md:w-[18%]">
             <Image src="/images/team/Alex-Marshall.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
           </div>
@@ -102,15 +102,15 @@ const AboutPage = () => {
               Alex Marshall
             </h4>
             <h4 className="mb-4 text-xl tracking-tight sm:text-2xl">
-              Founding director (Volunteer)
+              Founding member (Volunteer)
             </h4>
-            <p>
+            {/* <p>
               Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
+            </p> */}
           </div>
         </div>
 
-        <div className="flex items-center md:items-stretch justify-between mt-8 flex-col md:flex-row">
+        <div className="flex items-center justify-between mt-8 flex-col md:flex-row">
           <div className="w-fit md:w-[18%]">
             <Image src="/images/team/Jasper-Westaway.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
           </div>
@@ -121,9 +121,9 @@ const AboutPage = () => {
             <h4 className="mb-4 text-xl tracking-tight sm:text-2xl">
               Founding director (Volunteer)
             </h4>
-            <p>
+            {/* <p>
               Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { TickIcon } from "./Icons";
+import OrdalocaBtn from "../components/OrdalocaBtn";
 
 type ImageProp = {
     src: string;
@@ -15,10 +16,11 @@ const SpacesCard = ({ className = '', title, content, href, isAvailable = false,
         <div className={`bg-secondary-100 w-full relative flex flex-col md:items-stretch md:flex-row-reverse lg:flex-col ${className}`}>
             <div className="flex flex-col flex-1 gap-4 p-8 w-full md:max-w-[66.666%]  lg:max-w-none">
                 <h1 className="text-3xl font-bold">{title}</h1>
-                <p className="mb-6">{content}</p>
-                <Link href={href} className="text-primary-900 underline mt-auto">
+                <p className="mb-6 min-h-[75px]">{content}</p>
+                {/* <Link href={href} className="text-primary-900 underline mt-auto">
                     Find out more
-                </Link>
+                </Link> */}
+                <OrdalocaBtn className="mt-2 w-fit" url={href}/>
             </div>
             <div className="w-full md:max-w-[33.333%] lg:max-w-none">
                 <Image {...image} className="w-full h-full object-cover lg:h-auto lg:object-fill" alt="placeholder"/>

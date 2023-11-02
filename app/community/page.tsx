@@ -5,6 +5,12 @@ import { RightArrow } from "../components/Icons";
 import Link from "next/link";
 import SpacesSection from "../components/SpacesSection";
 
+
+import Lottie from "lottie-react";
+import shoes from '../../public/lotties/running-shoes.json';
+import burger from '../../public/lotties/burger.json';
+import swimming from '../../public/lotties/swimming-glasses.json';
+
 import "../../public/css/swiper.css";
 import 'swiper/css';
 import "../../public/css/scrollbar.css";
@@ -193,33 +199,54 @@ const CommunityPage = () => {
           </h3>
           <div className="flex justify-evenly w-full mb-12 flex-col lg:flex-row">
               <div className="flex items-center">
-                <div className="flex items-center p-4 bg-secondary-100 text-secondary-900 bold text-3xl h-24 w-24 justify-center">
-                  <p>Icon</p>
+                <div className="flex items-center aspect-square p-4 bg-secondary-100 text-secondary-900 bold text-3xl h-24 w-24 justify-center">
+                  <Lottie 
+                    loop={true}
+                    className="max-w-[75px] mx-auto"
+                    autoplay={true}
+                    animationData={shoes}
+                    height={75}
+                    width={75}
+                  />
                 </div>
                 <div className="p-4 text-sm">
                   <p>Propeller is not just a co-working space, it&apos;s a not-for-profit, volunteer-run venture.</p>
                 </div>
               </div>
               <div className="flex items-center">
-                <div className="flex items-center p-4 bg-secondary-100 text-secondary-900 bold text-3xl h-24 w-24 justify-center">
-                  <p className="">Icon</p>
+                <div className="flex items-center aspect-square p-4 bg-secondary-100 text-secondary-900 bold text-3xl h-24 w-24 justify-center">
+                  <Lottie 
+                    loop={true}
+                    className="max-w-[75px] mx-auto"
+                    autoplay={true}
+                    animationData={burger}
+                    height={75}
+                    width={75}
+                  />
                 </div>
                 <div className="p-4 text-sm">
                   <p>We are building a community of like-minded people and businesses that share ideas.</p>
                 </div>
               </div>
               <div className="flex items-center">
-                <div className="flex items-center p-4 bg-secondary-100 text-secondary-900 bold text-3xl h-24 w-24 justify-center">
-                  <p className="">Icon</p>
+                <div className="flex items-center aspect-square p-4 bg-secondary-100 text-secondary-900 bold text-3xl h-24 w-24 justify-center">
+                  <Lottie 
+                    loop={true}
+                    className="max-w-[75px] mx-auto"
+                    autoplay={true}
+                    animationData={swimming}
+                    height={75}
+                    width={75}
+                  />
                 </div>
                 <div className="p-4 text-sm">
                   <p>Our focus is on promoting and growing creative and tech based industries in Exmouth.</p>
                 </div>
               </div>
           </div>
-          <Link href="/community" className="text-primary-900 underline text-xl">
+          {/* <Link href="/community" className="text-primary-900 underline text-xl">
             Find out more about our members
-          </Link>
+          </Link> */}
         </div>
       </div>
       
