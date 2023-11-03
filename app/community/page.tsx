@@ -56,7 +56,7 @@ const CommunityPage = () => {
           <Image src="/images/Community.jpg" alt="App screenshot" width={1080} height={720} className="object-cover h-full w-full" />
         </div>
         <div className="max-w-6xl px-6 mx-auto flex justify-end items-center">
-          <div className="mx-auto w-full max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8 my-20 z-20 bg-primary-900 px-10 py-32">
+          <div className="mx-auto w-full max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl my-20 z-20 bg-primary-900 px-8 py-10 lg:px-10 lg:py-32">
             <h1 className="mt-8 text-4xl font-bold tracking-tight text-white sm:text-6xl">
               Our Community
             </h1>
@@ -77,25 +77,25 @@ const CommunityPage = () => {
           </p>
         </div>
         <div className="flex items-stretch justify-start w-full overflow-y-hidden overflow-x-scroll custom-scrollbar pb-4">
-          <div className="block aspect-video w-fit min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
+          <div className="block aspect-video w-[200px] min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
             <Image src="/images/inconf.png" alt="App screenshot" width="200" height="200" className="object-contain h-full w-full" loading="lazy"/>
           </div>
-          <div className="block aspect-video w-fit min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
+          <div className="block aspect-video w-[200px] min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
             <Image src="/images/DataFiltr.png" alt="App screenshot" width="200" height="200" className="object-contain h-full w-full" loading="lazy"/>
           </div>
-          <div className="block aspect-video w-fit min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
+          <div className="block aspect-video w-[200px] min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
             <Image src="/images/ordaloca.png" alt="App screenshot" width="200" height="200" className="object-contain h-full w-full" loading="lazy"/>
           </div>
-          <div className="block aspect-video w-fit min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
+          <div className="block aspect-video w-[200px] min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
             <Image src="/images/pixel-fridge-logo.png" alt="App screenshot" width="200" height="200" className="object-contain h-full w-full" loading="lazy"/>
           </div>
-          <div className="block aspect-video w-fit min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
+          <div className="block aspect-video w-[200px] min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
             <Image src="/images/radiance.png" alt="App screenshot" width="200" height="200" className="object-contain h-full w-full" loading="lazy"/>
           </div>
-          <div className="block aspect-video w-fit min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
+          <div className="block aspect-video w-[200px] min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
             <Image src="/images/Simplyvideo.png" alt="App screenshot" width="200" height="200" className="object-contain h-full w-full" loading="lazy"/>
           </div>
-          <div className="block aspect-video w-fit min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
+          <div className="block aspect-video w-[200px] min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
             <Image src="/images/tvav.png" alt="App screenshot" width="200" height="200" className="object-contain h-full w-full" loading="lazy"/>
           </div>
         </div>
@@ -120,23 +120,9 @@ const CommunityPage = () => {
             <swiper-slide>
               <div className="flex community-slide">
                 <div
-                  className="
-                    mr-2
-                    relative
-                    block
-                    w-10 h-24
-                    bg-primary-900
-                  "
-                ></div>
+                  className="mr-2 relative hidden lg:block w-10 h-24 bg-primary-900"></div>
                 <div
-                  className="
-                    mr-2
-                    relative
-                    block
-                    w-20 h-40
-                    bg-primary-900
-                  "
-                ></div>
+                  className="mr-2 relative hidden lg:block w-20 h-40 bg-primary-900"></div>
                 <div className="flex flex-col lg:flex-row items-center justify-between bg-white p-8">
                   <div className="w-full lg:w-[60%]">
                     <Image src="/images/ordaloca.png" alt="Ordaloca" width="200" height="200" className="object-contain h-8 w-auto mb-8" loading="lazy"/>
@@ -157,24 +143,8 @@ const CommunityPage = () => {
 
             <swiper-slide>
               <div className="flex community-slide">
-                <div
-                  className="
-                    mr-2
-                    relative
-                    block
-                    w-10 h-24
-                    bg-primary-900
-                  "
-                ></div>
-                <div
-                  className="
-                    mr-2
-                    relative
-                    block
-                    w-20 h-40
-                    bg-primary-900
-                  "
-                ></div>
+                <div className="mr-2 relative hidden lg:block w-10 h-24 bg-primary-900"></div>
+                <div className="mr-2 relative hidden lg:block w-20 h-40 bg-primary-900"></div>
                 <div className="flex flex-col lg:flex-row items-center justify-between bg-white p-8">
                   <div className="w-full lg:w-[60%]">
                     <Image src="/pixelfridge.svg" alt="PixelFridge" width="200" height="200" className="object-contain h-8 w-auto mb-8" loading="lazy"/>
@@ -194,10 +164,10 @@ const CommunityPage = () => {
             </swiper-slide>
           </swiper-container>
 
-          <div className={(!prevActive ? 'opacity-0' : 'opacity-100') + " next-arrow w-10 h-10 absolute top-1/2 right-full -translate-y-1/2 fill-primary-900 z-10 cursor-pointer transition-all duration-300"} onClick={handlePrev}>
+          <div className={(!prevActive ? 'opacity-0' : 'opacity-100') + " next-arrow w-10 h-10 absolute top-1/2 left-4 lg:left-auto lg:right-full -translate-y-1/2 fill-primary-900 z-10 cursor-pointer transition-all duration-300"} onClick={handlePrev}>
             <RightArrow className="w-10 h-10 fill-primary-900 rotate-180"/>
           </div>
-          <div className={(!nextActive ? 'opacity-0' : 'opacity-100') + " next-arrow w-10 h-10 absolute top-1/2 left-full -translate-y-1/2 fill-primary-900 z-10 cursor-pointer transition-all duration-300"} onClick={handleNext}>
+          <div className={(!nextActive ? 'opacity-0' : 'opacity-100') + " next-arrow w-10 h-10 absolute top-1/2 right-4 lg:right-auto lg:left-full -translate-y-1/2 fill-primary-900 z-10 cursor-pointer transition-all duration-300"} onClick={handleNext}>
             <RightArrow className="w-10 h-10 fill-primary-900"/>
           </div>
         </div>
@@ -208,7 +178,7 @@ const CommunityPage = () => {
           <h3 className="text-primary-900 text-2xl font-bold mb-12">
             What’s on for members?
           </h3>
-          <div className="flex justify-evenly w-full mb-12 flex-col lg:flex-row">
+          <div className="flex justify-evenly w-full mb-12 flex-col lg:flex-row gap-4">
               <div className="flex items-center">
                 <div className="flex items-center aspect-square p-4 bg-secondary-100 text-secondary-900 bold text-3xl h-24 w-24 justify-center">
                   <Lottie 
@@ -270,22 +240,22 @@ const CommunityPage = () => {
           </h3>
         </div>
         <div className="flex items-stretch justify-start w-full overflow-y-hidden overflow-x-scroll custom-scrollbar pb-4">
-          <div className="block aspect-video w-fit min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
+          <div className="block aspect-video w-[200px] min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
             <Image src="/images/cabin.png" alt="Cabin Coffee Logo" width="200" height="200" className="object-contain h-full w-full" loading="lazy"/>
           </div>
-          <div className="block aspect-video w-fit min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
+          <div className="block aspect-video w-[200px] min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
             <Image src="/images/grapevine.png" alt="Grapevine Logo" width="200" height="200" className="object-contain h-full w-full" loading="lazy"/>
           </div>
-          <div className="block aspect-video w-fit min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
+          <div className="block aspect-video w-[200px] min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
             <Image src="/images/henrys.png" alt="Henry's Logo" width="200" height="200" className="object-contain h-full w-full" loading="lazy"/>
           </div>
-          <div className="block aspect-video w-fit min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
+          <div className="block aspect-video w-[200px] min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
             <Image src="/images/hop.png" alt="Hop Logo" width="200" height="200" className="object-contain h-full w-full" loading="lazy"/>
           </div>
-          <div className="block aspect-video w-fit min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
+          <div className="block aspect-video w-[200px] min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
             <Image src="/images/sea-dog.png" alt="Sea Dog Logo" width="200" height="200" className="object-contain h-full w-full" loading="lazy"/>
           </div>
-          <div className="block aspect-video w-fit min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
+          <div className="block aspect-video w-[200px] min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
             <Image src="/images/strand-deli.png" alt="Strand Deli Logo" width="200" height="200" className="object-contain h-full w-full" loading="lazy"/>
           </div>
         </div>
