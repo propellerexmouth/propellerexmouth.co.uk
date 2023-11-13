@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const LogoLong = () => {
+const LogoLong = ({ closeMenu, onClick }: {closeMenu: any; onClick: any}) => {
   return (
     <>
-      <Link href="/">
+      <Link href="/" onClick={onClick}>
         <svg width="291" height="28" viewBox="0 0 291 28" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-12">
           <g clipPath="url(#clip0_134_5967)">
             <g clipPath="url(#clip1_134_5967)">

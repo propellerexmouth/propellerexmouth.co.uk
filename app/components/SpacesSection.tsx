@@ -20,7 +20,7 @@ const SpacesSection = ({ title, content }: { title?: string; content?: string; }
                             }}
                             title="Co-working"
                             content="Desks in our shared workspace are suitable for individuals and small teams"
-                            href="/community"
+                            href="https://orda.to/5-1"
                         />
                         <SpacesCard
                             image={{
@@ -31,7 +31,7 @@ const SpacesSection = ({ title, content }: { title?: string; content?: string; }
                             }}
                             title="Offices"
                             content="We have a number of private offices, ranging from 4 - 20 people."
-                            href="/community"
+                            href="https://orda.to/401?ref=ordaloca_btn"
                         />
                         <SpacesCard
                             image={{
@@ -42,7 +42,7 @@ const SpacesSection = ({ title, content }: { title?: string; content?: string; }
                             }}
                             title="Meeting Spaces"
                             content="Our meeting spaces are bookable for BOTH members and non-members"
-                            href="/community"
+                            href="https://orda.to/401?ref=ordaloca_btn"
                         />
                     </div>
                 </div>

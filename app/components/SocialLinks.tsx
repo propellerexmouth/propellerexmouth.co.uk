@@ -26,22 +26,22 @@ const SocialLinks = ({ size = 'md' }: { size?: 'sm'|'md'|'lg' }) => {
   return (
     <menu className={`inline-flex ${gapSize} text-primary-900 py-1`}>
       <li>
-        <a target="_blank" rel="nofollow" href="https://www.facebook.com/propellerexmouth" className={`bg-white rounded-full ${linkSizeClass} block`}>
+        <a target="_blank" rel="nofollow" href="https://www.facebook.com/propellerexmouth" className={`bg-white rounded-full ${linkSizeClass} block hover:scale-110 transition-all`}>
           <FacebookIcon className={`w-full h-full stroke-none`} />
         </a>
       </li>
       <li>
-        <a target="_blank" rel="nofollow" href="https://www.instagram.com/propellerexmouth/" className={`bg-white rounded-full ${linkSizeClass} block`}>
+        <a target="_blank" rel="nofollow" href="https://www.instagram.com/propellerexmouth/" className={`bg-white rounded-full ${linkSizeClass} block hover:scale-110 transition-all`}>
           <InstagramIcon className={`w-full h-full stroke-none`} />
         </a>
       </li>
       <li>
-        <a target="_blank" rel="nofollow" href="https://twitter.com/propellerexm" className={`bg-white rounded-full ${linkSizeClass} block`}>
+        <a target="_blank" rel="nofollow" href="https://twitter.com/propellerexm" className={`bg-white rounded-full ${linkSizeClass} block hover:scale-110 transition-all`}>
           <TwitterIcon className={`w-full h-full stroke-none`} />
         </a>
       </li>
       <li>
-        <a target="_blank" rel="nofollow" href="https://www.linkedin.com/company/propellerexmouth" className={`bg-white rounded-full ${linkSizeClass} block`}>
+        <a target="_blank" rel="nofollow" href="https://www.linkedin.com/company/propellerexmouth" className={`bg-white rounded-full ${linkSizeClass} block hover:scale-110 transition-all`}>
           <LinkedinIcon className={`w-full h-full stroke-none`} />
         </a>
       </li>

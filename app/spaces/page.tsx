@@ -3,6 +3,7 @@ import { useState, useRef } from "react";
 import Image from "next/image";
 import { RightArrow } from "../components/Icons";
 import SimpleHero from "../components/SimpleHero";
+import OrdalocaBtn from "../components/OrdalocaBtn";
 import MemberBenefits from "../components/MemberBenefits";
 
 import "../../public/css/swiper.css";
@@ -27,6 +28,7 @@ const SpacesPage = () => {
         <SimpleHero
           content="Desk space, offices and meeting rooms for building businesses that can scale"
         />
+
         <div className="bg-secondary-100">
           <div className="mx-auto w-full max-w-6xl px-6 py-20 flex align-top justify-between flex-col md:flex-row">
             <div className="w-full md:w-[25%]">
@@ -61,13 +63,13 @@ const SpacesPage = () => {
                     Work alongside other entrepreneurs, creatives and engineers in our shared workspace
                   </h4>
                   <p className="mb-4">
-                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit ation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Monthly Desk Hire is the perfect solution for entrepreneurs or small business owners who need workspace without the hassle of office setup and long-term rentals.
                   </p>
                   <h4 className="mb-4 font-bold uppercase">
                     Pricing
                   </h4>
                   <p className="mb-4">
-                    *Prices are exclusive of VAT
+                    *Prices are inclusive of VAT
                   </p>
                   <div className="flex items-center justify-between flex-wrap mb-4">
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
@@ -75,16 +77,18 @@ const SpacesPage = () => {
                         Monthly dedicated desk
                       </p>
                       <p className="text-xl">
-                        £220 per month*
+                        £264 per month*
                       </p>
+                      <OrdalocaBtn className="mt-8" url="https://orda.to/5-5"/>
                     </div>
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
                       <p className="mb-4 text-lg font-bold text-primary-900">
                         Daily hot desk
                       </p>
                       <p className="text-xl">
-                        £15 per day*
+                        £18 per day*
                       </p>
+                      <OrdalocaBtn className="mt-8" url="https://orda.to/5-1"/>
                     </div>
                   </div>
                   <a className="underline text-primary-900" href="/contact">Get in touch</a>
@@ -97,13 +101,13 @@ const SpacesPage = () => {
                     Making the most of our shared facilities, while maintaining some privacy for your team
                   </h4>
                   <p className="mb-4">
-                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit ation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Whether you need an individual desk, a team space, or a larger private office, our wide selection of desks and chair options are tailored to fit your needs. With our monthly desk hire, you can enjoy all the benefits of a professional workspace without any of the long-term commitment.
                   </p>
                   <h4 className="mb-4 font-bold uppercase">
                     Pricing
                   </h4>
                   <p className="mb-4">
-                    *Prices are exclusive of VAT
+                    *Prices are inclusive of VAT
                   </p>
                   <div className="flex items-center justify-between flex-wrap mb-4">
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
@@ -111,7 +115,7 @@ const SpacesPage = () => {
                         4 person office available now
                       </p>
                       <p className="text-xl">
-                        Please enquire
+                        <a href="/contact">Enquire now</a>
                       </p>
                     </div>
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
@@ -119,7 +123,7 @@ const SpacesPage = () => {
                         8 person office available now
                       </p>
                       <p className="text-xl">
-                        Please enquire
+                        <a href="/contact">Enquire now</a>
                       </p>
                     </div>
                   </div>
@@ -133,13 +137,15 @@ const SpacesPage = () => {
                     Our meeting room is set up ready for in person and virtual meetings
                   </h4>
                   <p className="mb-4">
-                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit ation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    The John Petty Meeting Room comfortably sits 10 people. It&apos;s equipped with comfortable seating and a large table, as well as a wired/wireless TV connection, Logitech conference cam and a whiteboard.
+                    The room also comes with access to our hi-speed WiFi and complimentary refreshments.
+                    Whether it&apos;s a collaborative brainstorming session or a private gathering, the Propeller meeting room is the ideal space for any occasion.
                   </p>
                   <h4 className="mb-4 font-bold uppercase">
                     Pricing
                   </h4>
                   <p className="mb-4">
-                    *Prices are exclusive of VAT
+                    *Prices are inclusive of VAT
                   </p>
                   <div className="flex items-center justify-between flex-wrap mb-4">
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
@@ -147,16 +153,18 @@ const SpacesPage = () => {
                         Per hour
                       </p>
                       <p className="text-xl">
-                        from £20*
+                        from £30*
                       </p>
+                      <OrdalocaBtn className="mt-8" url="https://orda.to/5-3"/>
                     </div>
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
                       <p className="mb-4 text-lg font-bold text-primary-900">
                         Per day
                       </p>
                       <p className="text-xl">
-                        from £100*
+                        from £114*
                       </p>
+                      <OrdalocaBtn className="mt-8" url="https://orda.to/5-3"/>
                     </div>
                   </div>
                   <a className="underline text-primary-900" href="/contact">Get in touch</a>
