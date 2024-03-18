@@ -60,7 +60,7 @@ const AboutPage = () => {
 
         <div className="flex items-center justify-between mt-8 flex-col md:flex-row">
           <div className="w-fit md:w-[18%]">
-            <Image src="/images/team/Nathan-Budd.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
+            <Image src="/images/team/Nathan.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
           </div>
           <div className="w-full md:w-[78%] md:text-left text-center my-8 md:my-0">
             <h4 className="font-bold uppercase text-md">
@@ -76,7 +76,7 @@ const AboutPage = () => {
 
         <div className="flex items-center justify-between mt-8 flex-col md:flex-row">
           <div className="w-fit md:w-[18%]">
-            <Image src="/images/team/Jim-Hill.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
+            <Image src="/images/team/Jim.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
           </div>
           <div className="w-full md:w-[78%] md:text-left text-center my-8 md:my-0">
             <h4 className="font-bold uppercase text-md">
@@ -92,7 +92,7 @@ const AboutPage = () => {
 
         <div className="flex items-center justify-between mt-8 flex-col md:flex-row">
           <div className="w-fit md:w-[18%]">
-            <Image src="/images/team/Alex-Marshall.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
+            <Image src="/images/team/Alex.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
           </div>
           <div className="w-full md:w-[78%] md:text-left text-center my-8 md:my-0">
             <h4 className="font-bold uppercase text-md">
@@ -108,7 +108,7 @@ const AboutPage = () => {
 
         <div className="flex items-center justify-between mt-8 flex-col md:flex-row">
           <div className="w-fit md:w-[18%]">
-            <Image src="/images/team/Jasper-Westaway.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
+            <Image src="/images/team/Jasper.jpg" alt="placeholder image" className="object-cover h-full w-auto aspect-square" width="100" height="100"/>
           </div>
           <div className="w-full md:w-[78%] md:text-left text-center my-8 md:my-0">
             <h4 className="font-bold uppercase text-md">
