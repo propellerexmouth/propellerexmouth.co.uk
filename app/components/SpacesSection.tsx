@@ -20,7 +20,8 @@ const SpacesSection = ({ title, content }: { title?: string; content?: string; }
                             }}
                             title="Co-working"
                             content="Desks in our shared workspace are suitable for individuals and small teams"
-                            href="https://orda.to/5-1"
+                            href="https://desks.propellerexmouth.app"
+                            btnTarget="_blank"
                         />
                         <SpacesCard
                             image={{
@@ -31,7 +32,8 @@ const SpacesSection = ({ title, content }: { title?: string; content?: string; }
                             }}
                             title="Offices"
                             content="We have a number of private offices, ranging from 4 - 20 people."
-                            href="https://orda.to/401?ref=ordaloca_btn"
+                            href="/contact"
+                            btnTarget="_self"
                         />
                         <SpacesCard
                             image={{
@@ -42,7 +44,8 @@ const SpacesSection = ({ title, content }: { title?: string; content?: string; }
                             }}
                             title="Meeting Spaces"
                             content="Our meeting spaces are bookable for BOTH members and non-members"
-                            href="https://orda.to/401?ref=ordaloca_btn"
+                            href="https://rooms.propellerexmouth.app"
+                            btnTarget="_blank"
                         />
                     </div>
                 </div>

@@ -1,7 +1,7 @@
-import Link from "next/link";
+
 import Image from "next/image";
 import { TickIcon } from "./Icons";
-import OrdalocaBtn from "../components/OrdalocaBtn";
+import AppButton from "./AppButton";
 
 type ImageProp = {
     src: string;
@@ -10,7 +10,7 @@ type ImageProp = {
     width: number;
 }
 
-const SpacesCard = ({ className = '', title, content, href, isAvailable = false, image }: { className?: string; title: string; content: string; href: string; isAvailable?: boolean; image: ImageProp; }) => {
+const SpacesCard = ({ className = '', title, content, href, isAvailable = false, image, btnTarget }: { className?: string; title: string; content: string; href: string; isAvailable?: boolean; image: ImageProp; btnTarget: string }) => {
     return (
       <>
         <div className={`bg-secondary-100 w-full relative flex flex-col md:items-stretch md:flex-row-reverse lg:flex-col ${className}`}>
@@ -20,7 +20,7 @@ const SpacesCard = ({ className = '', title, content, href, isAvailable = false,
                 {/* <Link href={href} className="text-primary-900 underline mt-auto">
                     Find out more
                 </Link> */}
-                <OrdalocaBtn className="mt-2 w-fit" url={href}/>
+                <AppButton className="mt-2 w-fit" url={href} target={btnTarget}/>
             </div>
             <div className="w-full md:max-w-[33.333%] lg:max-w-none">
                 <Image {...image} className="w-full h-full object-cover lg:h-auto lg:object-fill" alt="placeholder"/>

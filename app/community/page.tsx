@@ -93,9 +93,6 @@ const CommunityPage = () => {
             <Image src="/images/radiance.png" alt="App screenshot" width="200" height="200" className="object-contain h-full w-full" loading="lazy"/>
           </div>
           <div className="block aspect-video w-[200px] min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
-            <Image src="/images/Simplyvideo.png" alt="App screenshot" width="200" height="200" className="object-contain h-full w-full" loading="lazy"/>
-          </div>
-          <div className="block aspect-video w-[200px] min-w-[15%] h-auto mx-4 border border-grey-20 p-4">
             <Image src="/images/tvav.png" alt="App screenshot" width="200" height="200" className="object-contain h-full w-full" loading="lazy"/>
           </div>
         </div>

@@ -10,6 +10,7 @@ import "../../public/css/swiper.css";
 import 'swiper/css';
 import { register } from 'swiper/element/bundle';
 import { SwiperRef } from "@/types/swiper";
+import AppButton from "../components/AppButton";
 
 register();
 
@@ -79,7 +80,7 @@ const SpacesPage = () => {
                       <p className="text-xl">
                         £264 per month*
                       </p>
-                      <OrdalocaBtn className="mt-8" url="https://orda.to/5-5"/>
+                      <AppButton className="mt-8" url="https://desks.propellerexmouth.app" target="_blank"/>
                     </div>
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
                       <p className="mb-4 text-lg font-bold text-primary-900">
@@ -88,7 +89,7 @@ const SpacesPage = () => {
                       <p className="text-xl">
                         £18 per day*
                       </p>
-                      <OrdalocaBtn className="mt-8" url="https://orda.to/5-1"/>
+                      <AppButton className="mt-8" url="https://desks.propellerexmouth.app" target="_blank"/>
                     </div>
                   </div>
                   <a className="underline text-primary-900" href="/contact">Get in touch</a>
@@ -155,7 +156,7 @@ const SpacesPage = () => {
                       <p className="text-xl">
                         from £30*
                       </p>
-                      <OrdalocaBtn className="mt-8" url="https://orda.to/5-3"/>
+                      <AppButton className="mt-8" url="https://rooms.propellerexmouth.app" target="_blank"/>
                     </div>
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
                       <p className="mb-4 text-lg font-bold text-primary-900">
@@ -164,7 +165,7 @@ const SpacesPage = () => {
                       <p className="text-xl">
                         from £114*
                       </p>
-                      <OrdalocaBtn className="mt-8" url="https://orda.to/5-3"/>
+                      <AppButton className="mt-8" url="https://rooms.propellerexmouth.app" target="_blank"/>
                     </div>
                   </div>
                   <a className="underline text-primary-900" href="/contact">Get in touch</a>
