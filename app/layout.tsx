@@ -1,5 +1,4 @@
 import "./globals.css";
-
 import Footer from "./components/Footer";
 import PreHeader from "./components/PreHeader";
 import Header from "./components/Header";
@@ -17,6 +16,9 @@ export const metadata = {
   icons: {
     shortcut: "/favicon.ico",
   },
+  itunes: {
+    appId: "6480235024",
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -25,9 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="flex flex-col antialiased min-h-full text-black">
         <PreHeader />
         <Header />
-
         <main className="min-h-fit">{children}</main>
-
         <Footer />
       </body>
     </html>
