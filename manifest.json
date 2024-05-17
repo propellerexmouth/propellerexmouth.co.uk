@@ -1,0 +1,36 @@
+{
+  "short_name": "Propeller",
+  "name": "Propeller Exmouth Co-Working",
+  "icons": [
+    {
+      "src": "/icons/icons-vector.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/icons/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "description": "Propeller Exmouth &middoyt; A not-for-profit (volunteer run) co-working space by the sea.",
+  "preferred_url": "https://propellerexmouth.co.uk",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f9fa",
+  "theme_color": "#343a40",
+  "orientation": "portrait",
+  "prefer_related_applications": true,
+  "related_applications": [
+      {
+      "platform": "play",
+      "id": "com.spacebring.propellerexmouthltd",
+      "url": "https://play.google.com/store/apps/details?id=com.spacebring.propellerexmouthltd"
+      }
+  ]
+}

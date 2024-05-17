@@ -1,6 +1,6 @@
 import React from "react";
-import OrdalocaBtn from "../components/OrdalocaBtn";
 import { ibmPlexMono } from "../fonts";
+import AppButton from "../components/AppButton";
 
 const ContactPage = () => {
   return (
@@ -12,7 +12,7 @@ const ContactPage = () => {
             <p className="mt-8">15 Victoria Road, Exmouth EX8 1DL</p>
             <p className="mt-8"><a href="tel:01395263509">01395 263509</a> <a href="mailto:hello@propellerexmouth.co.uk">hello@propellerexmouth.co.uk</a></p>
           </address>
-          <OrdalocaBtn className="mt-8" url="https://orda.to/401?ref=ordaloca_btn"/>
+          <AppButton className="mt-8" url="https://app.propellerexmouth.co.uk" target="_blank"/>
         </div>
       </div>
     </div>

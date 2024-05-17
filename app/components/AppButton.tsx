@@ -1,6 +1,6 @@
 import React from "react";
 
-const AppButton = ({ url, className, target }: { url?: string; className: string; target: string }) => {
+const AppButton = ({ url, className, target = "_blank" }: { url?: string; className: string; target?: string }) => {
   return (
     <a href={url} target={target} className={`ordaloca-btn ${className}`}>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

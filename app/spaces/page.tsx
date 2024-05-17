@@ -3,7 +3,6 @@ import { useState, useRef } from "react";
 import Image from "next/image";
 import { RightArrow } from "../components/Icons";
 import SimpleHero from "../components/SimpleHero";
-import OrdalocaBtn from "../components/OrdalocaBtn";
 import MemberBenefits from "../components/MemberBenefits";
 
 import "../../public/css/swiper.css";
