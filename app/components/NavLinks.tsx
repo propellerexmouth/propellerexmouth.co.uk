@@ -1,5 +1,5 @@
 import React from "react";
-import { CommunityIcon, SpacesIcon } from "./Icons";
+import { CommunityIcon, UpRightArrow, SpacesIcon } from "./Icons";
 import NavLink from "./NavLink";
 
 const NavLinks = ({ closeMenu, incHome = false, incContact = true, showIcons = true, onClick }: {closeMenu: any; incHome: boolean, incContact: boolean, showIcons: boolean, onClick: any}) => {
@@ -26,6 +26,10 @@ const NavLinks = ({ closeMenu, incHome = false, incContact = true, showIcons = t
           Contact
         </NavLink>
       )}
+      <NavLink href="/spaces"  closeMenu={closeMenu} onClick={onClick}>
+        Join
+        {showIcons && <UpRightArrow className="w-6 h-6 inline-block fill-current" />}
+      </NavLink>
     </>
   );
 };
