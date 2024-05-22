@@ -14,7 +14,7 @@ import AppButton from "../components/AppButton";
 register();
 
 const SpacesPage = () => {
-  const [activeElement, setActiveElement] = useState("desks");
+  const [activeElement, setActiveElement] = useState("membership");
 
   const swiperElRef = useRef<SwiperRef>(null);
 
@@ -32,6 +32,13 @@ const SpacesPage = () => {
         <div className="bg-secondary-100">
           <div className="mx-auto w-full max-w-6xl px-6 py-20 flex align-top justify-between flex-col md:flex-row">
             <div className="w-full md:w-[25%]">
+
+              <div className={activeElement === "membership" ? "group is-active block cursor-pointer" : "group block cursor-pointer"} onClick={() => setActiveElement("membership")}>
+                <div className="flex items-center justify-between p-6 mb-4 bg-white text-black border border-white group-[.is-active]:bg-primary-900 group-[.is-active]:text-white group-[.is-active]:border-primary-900">
+                  <span className="font-bold">24/7 Membership</span>
+                  <RightArrow className="w-6 h-6 group-[.is-active]:fill-white fill-primary-900 group-[.is-active]:rotate-90 group-[.is-active]:md:rotate-0 transition-all"/>
+                </div>
+              </div>
 
               <div className={activeElement === "desks" ? "group is-active block cursor-pointer" : "group block cursor-pointer"} onClick={() => setActiveElement("desks")}>
                 <div className="flex items-center justify-between p-6 mb-4 bg-white text-black border border-white group-[.is-active]:bg-primary-900 group-[.is-active]:text-white group-[.is-active]:border-primary-900">
@@ -57,14 +64,24 @@ const SpacesPage = () => {
 
             <div className="w-full md:w-[68%] mt-12 md:mt-0">
 
-              <div className={activeElement === "desks" ? "group is-active block" : "group block"}>
-                <div className="group-[.is-active]:opacity-100 group-[.is-active]:max-h-screen max-h-0 opacity-0 overflow-hidden transition-opacity duration-500">
+              <div className={activeElement === "membership" ? "group is-active block" : "group block"}>
+                <div className="group-[.is-active]:opacity-100 group-[.is-active]:max-h-[2000px] max-h-0 opacity-0 overflow-hidden transition-opacity duration-500">
                   <h4 className="mb-10 text-xl tracking-tight sm:text-2xl">
-                    Work alongside other entrepreneurs, creatives and engineers in our shared workspace
+                    Work alongside other entrepreneurs, creatives and engineers in our shared workspace with 24/7 access and all member benefits
                   </h4>
                   <p className="mb-4">
-                    Monthly Desk Hire is the perfect solution for entrepreneurs or small business owners who need workspace without the hassle of office setup and long-term rentals.
+                    Monthly membership is the perfect solution for entrepreneurs or small business owners who need workspace without the hassle of office setup and long-term rentals.
                   </p>
+                  {/* <p className="mb-4">
+                    <ul>
+                      <li>✅ 24/7 access</li>
+                      <li>✅ Break out community areas</li>
+                      <li>✅ Kitchen facilities (hot water, fridge, microwave, crockery)</li>
+                      <li>✅ Free ree complimentary tea / coffee services</li>
+                      <li>✅ Members platform/social meet ups</li>
+                      <li>✅ On-site bike-storage facilities</li>
+                    </ul>
+                  </p> */}
                   <h4 className="mb-4 font-bold uppercase">
                     Pricing
                   </h4>
@@ -74,21 +91,69 @@ const SpacesPage = () => {
                   <div className="flex items-center justify-between flex-wrap mb-4">
                     <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
                       <p className="mb-4 text-lg font-bold text-primary-900">
-                        Monthly dedicated desk
+                        Monthly dedicated desk (24/7)
                       </p>
                       <p className="text-xl">
                         £264 per month*
                       </p>
-                      <AppButton className="mt-8" url="https://desks.propellerexmouth.app" target="_blank"/>
+                      <AppButton className="mt-8" url="https://app.propellerexmouth.co.uk/suite/organizations/ce381a20-e223-11ee-9fd2-230857dc86d3/membership/plans/a9823bb0-e2b0-11ee-8600-874994c823e6" target="_blank"/>
                     </div>
-                    <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
+                  </div>
+                  <a className="underline text-primary-900" href="/contact">Get in touch</a>
+                </div>
+              </div>
+              
+              <div className={activeElement === "desks" ? "group is-active block" : "group block"}>
+                <div className="group-[.is-active]:opacity-100 group-[.is-active]:max-h-[2000px] max-h-0 opacity-0 overflow-hidden transition-opacity duration-500">
+                  <h4 className="mb-10 text-xl tracking-tight sm:text-2xl">
+                    Work alongside other entrepreneurs, creatives and engineers in our shared workspace
+                  </h4>
+                  <p className="mb-4">
+                    Hot Desk Hire is the perfect solution for entrepreneurs or small business owners who need workspace without the hassle of office setup and long-term rentals.
+                  </p>
+                  {/* <p className="mb-4">
+                    <ul>
+                      <li>✅ Access between 08:45 until 17:00 (Monday to Friday, except Bank Holidays)</li>
+                      <li>✅ Break out community areas.</li>
+                      <li>✅ Kitchen facilities (hot water, fridge, microwave, crockery).</li>
+                      <li>✅ Free ree complimentary tea / coffee services.</li>
+                      <li>✅ You can be included on our community members platform/social meet ups.</li>
+                      <li>✅ On-site bike-storage facilities.</li>
+                    </ul>
+                  </p> */}
+                  <h4 className="mb-4 font-bold uppercase">
+                    Pricing
+                  </h4>
+                  <p className="mb-4">
+                    *Prices are inclusive of VAT
+                  </p>
+                  <div className="flex items-center justify-between flex-wrap mb-4">
+                    <div className="w-full md:w-[48%] my-8 border-2 text-center border-white p-8">
                       <p className="mb-4 text-lg font-bold text-primary-900">
-                        Daily hot desk
+                        Single hot desk
                       </p>
                       <p className="text-xl">
                         £18 per day*
                       </p>
-                      <AppButton className="mt-8" url="https://desks.propellerexmouth.app" target="_blank"/>
+                      <AppButton className="mt-8" url="https://app.propellerexmouth.co.uk/suite/organizations/ce381a20-e223-11ee-9fd2-230857dc86d3/desks" target="_blank"/>
+                    </div>
+                    <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
+                      <p className="mb-4 text-lg font-bold text-primary-900">
+                        4 day hot desk
+                      </p>
+                      <p className="text-xl">
+                        £18 per day*
+                      </p>
+                      <AppButton className="mt-8" url="https://app.propellerexmouth.co.uk/suite/organizations/ce381a20-e223-11ee-9fd2-230857dc86d3/membership/plans/d5b2e170-e518-11ee-8f3d-31c040751320" target="_blank"/>
+                    </div>
+                    <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
+                      <p className="mb-4 text-lg font-bold text-primary-900">
+                        8 day hot desk
+                      </p>
+                      <p className="text-xl">
+                        £18 per day*
+                      </p>
+                      <AppButton className="mt-8" url="https://app.propellerexmouth.co.uk/suite/organizations/ce381a20-e223-11ee-9fd2-230857dc86d3/membership/plans/6f7c3f50-e51d-11ee-937b-e32fb13778b1" target="_blank"/>
                     </div>
                   </div>
                   <a className="underline text-primary-900" href="/contact">Get in touch</a>
@@ -96,7 +161,7 @@ const SpacesPage = () => {
               </div>
 
               <div className={activeElement === "offices" ? "group is-active block" : "group block"}>
-                <div className="group-[.is-active]:opacity-100 group-[.is-active]:max-h-screen max-h-0 opacity-0 overflow-hidden transition-opacity duration-500">
+                <div className="group-[.is-active]:opacity-100 group-[.is-active]:max-h-[2000px] max-h-0 opacity-0 overflow-hidden transition-opacity duration-500">
                   <h4 className="mb-10 text-xl tracking-tight sm:text-2xl">
                     Making the most of our shared facilities, while maintaining some privacy for your team
                   </h4>
@@ -132,7 +197,7 @@ const SpacesPage = () => {
               </div>
 
               <div className={activeElement === "meetings" ? "group is-active block" : "group block"}>
-                <div className="group-[.is-active]:opacity-100 group-[.is-active]:max-h-screen max-h-0 opacity-0 overflow-hidden transition-opacity duration-500">
+                <div className="group-[.is-active]:opacity-100 group-[.is-active]:max-h-[2000px] max-h-0 opacity-0 overflow-hidden transition-opacity duration-500">
                   <h4 className="mb-10 text-xl tracking-tight sm:text-2xl">
                     Our meeting room is set up ready for in person and virtual meetings
                   </h4>
