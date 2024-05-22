@@ -72,16 +72,17 @@ const SpacesPage = () => {
                   <p className="mb-4">
                     Monthly membership is the perfect solution for entrepreneurs or small business owners who need workspace without the hassle of office setup and long-term rentals.
                   </p>
-                  {/* <p className="mb-4">
+                  <p className="mb-4">
                     <ul>
                       <li>✅ 24/7 access</li>
+                      <li>✅ Access to the Shower</li>
                       <li>✅ Break out community areas</li>
                       <li>✅ Kitchen facilities (hot water, fridge, microwave, crockery)</li>
-                      <li>✅ Free ree complimentary tea / coffee services</li>
+                      <li>✅ Free complimentary tea / coffee services</li>
                       <li>✅ Members platform/social meet ups</li>
                       <li>✅ On-site bike-storage facilities</li>
                     </ul>
-                  </p> */}
+                  </p>
                   <h4 className="mb-4 font-bold uppercase">
                     Pricing
                   </h4>
@@ -111,16 +112,16 @@ const SpacesPage = () => {
                   <p className="mb-4">
                     Hot Desk Hire is the perfect solution for entrepreneurs or small business owners who need workspace without the hassle of office setup and long-term rentals.
                   </p>
-                  {/* <p className="mb-4">
+                  <p className="mb-4">
                     <ul>
                       <li>✅ Access between 08:45 until 17:00 (Monday to Friday, except Bank Holidays)</li>
                       <li>✅ Break out community areas.</li>
                       <li>✅ Kitchen facilities (hot water, fridge, microwave, crockery).</li>
-                      <li>✅ Free ree complimentary tea / coffee services.</li>
+                      <li>✅ Free complimentary tea / coffee services.</li>
                       <li>✅ You can be included on our community members platform/social meet ups.</li>
                       <li>✅ On-site bike-storage facilities.</li>
                     </ul>
-                  </p> */}
+                  </p>
                   <h4 className="mb-4 font-bold uppercase">
                     Pricing
                   </h4>
@@ -142,7 +143,7 @@ const SpacesPage = () => {
                         4 day hot desk
                       </p>
                       <p className="text-xl">
-                        £18 per day*
+                        £60 per month*
                       </p>
                       <AppButton className="mt-8" url="https://app.propellerexmouth.co.uk/suite/organizations/ce381a20-e223-11ee-9fd2-230857dc86d3/membership/plans/d5b2e170-e518-11ee-8f3d-31c040751320" target="_blank"/>
                     </div>
@@ -151,7 +152,7 @@ const SpacesPage = () => {
                         8 day hot desk
                       </p>
                       <p className="text-xl">
-                        £18 per day*
+                        £120 per month*
                       </p>
                       <AppButton className="mt-8" url="https://app.propellerexmouth.co.uk/suite/organizations/ce381a20-e223-11ee-9fd2-230857dc86d3/membership/plans/6f7c3f50-e51d-11ee-937b-e32fb13778b1" target="_blank"/>
                     </div>
