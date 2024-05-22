@@ -1,8 +1,10 @@
+import React from 'react';
 import "./globals.css";
 import Footer from "./components/Footer";
 import PreHeader from "./components/PreHeader";
 import Header from "./components/Header";
 import { archia } from "./fonts";
+import dynamic from 'next/dynamic';
 export const metadata = {
   title: {
     default: "Propeller Exmouth",
@@ -22,9 +24,12 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-
+  const CrispWithNoSSR = dynamic(
+    () => import('./crisp')
+  )
   return (
     <html lang="en" className={`${archia.variable} font-sans`}>
+      <CrispWithNoSSR />
       <body className="flex flex-col antialiased min-h-full text-black">
         <PreHeader />
         <Header />
