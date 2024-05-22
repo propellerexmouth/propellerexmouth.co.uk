@@ -1,13 +1,15 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import dynamic from 'next/dynamic';
 import React from "react";
 import SpacesSection from "./components/SpacesSection";
 import MemberBenefits from "./components/MemberBenefits";
-import Lottie from "lottie-react";
 import social from '../public/lotties/social-media.json';
 import idea from '../public/lotties/idea.json';
 import rocket from '../public/lotties/rocket.json';
+
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 const HomePage = () => {
   return (

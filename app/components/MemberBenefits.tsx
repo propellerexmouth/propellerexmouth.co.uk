@@ -1,12 +1,14 @@
 "use client";
 import Image from "next/image";
-import Lottie from "lottie-react";
+import dynamic from 'next/dynamic';
 import clock from '../../public/lotties/clock.json';
 import meteor from '../../public/lotties/meteor-rain.json';
 import wave from '../../public/lotties/wave.json';
 import coffee from '../../public/lotties/coffee-cup.json';
 import sunrise from '../../public/lotties/sunrise.json';
 import cycling from '../../public/lotties/cycling.json';
+
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 const MemberBenefits = ({ title, content }: { title?: string; content?: string; }) => {
     return (

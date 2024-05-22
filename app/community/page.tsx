@@ -4,20 +4,19 @@ import Image from "next/image";
 import { RightArrow } from "../components/Icons";
 import Link from "next/link";
 import SpacesSection from "../components/SpacesSection";
-
-
-import Lottie from "lottie-react";
 import shoes from '../../public/lotties/running-shoes.json';
 import burger from '../../public/lotties/burger.json';
 import swimming from '../../public/lotties/swimming-glasses.json';
-
 import "../../public/css/swiper.css";
 import 'swiper/css';
 import "../../public/css/scrollbar.css";
 import { register } from 'swiper/element/bundle';
 import { SwiperRef } from "@/types/swiper";
+import dynamic from "next/dynamic";
 
 register();
+
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 const CommunityPage = () => {
   const swiperElRef = useRef<SwiperRef>(null);
@@ -261,7 +260,5 @@ const CommunityPage = () => {
     </div>
   );
 };
-
-
 
 export default CommunityPage;
