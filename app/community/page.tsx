@@ -130,7 +130,7 @@ const CommunityPage = () => {
                     </Link>
                   </div>
                   <div className="w-full lg:w-[30%] flex justify-center lg:block mt-8 lg:mt-0">
-                    <Image src="/images/team/Jim-Hill.jpg" alt="Jim Hill" width="200" height="200" className="object-contain h-40 w-40" loading="lazy"/>
+                    <Image src="/images/team/Jim.jpg" alt="Jim Hill" width="200" height="200" className="object-contain h-40 w-40" loading="lazy"/>
                     <Image src="/images/team/Louis-Gillies.jpg" alt="Louis Gillies" width="200" height="200" className="object-contain h-40 w-40 -mt-8 lg:ml-auto lg:mr-0" loading="lazy"/>
                   </div>
                 </div>
