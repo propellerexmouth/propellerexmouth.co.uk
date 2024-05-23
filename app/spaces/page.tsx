@@ -97,7 +97,7 @@ const SpacesPage = () => {
                       <p className="text-xl">
                         £264 per month*
                       </p>
-                      <AppButton className="mt-8" url="https://app.propellerexmouth.co.uk/suite/organizations/ce381a20-e223-11ee-9fd2-230857dc86d3/membership/plans/a9823bb0-e2b0-11ee-8600-874994c823e6" target="_blank"/>
+                      <AppButton className="mt-8" label="Join Now" url="https://app.propellerexmouth.co.uk/suite/organizations/ce381a20-e223-11ee-9fd2-230857dc86d3/membership/plans/a9823bb0-e2b0-11ee-8600-874994c823e6" target="_blank"/>
                     </div>
                   </div>
                   <a className="underline text-primary-900" href="/contact">Get in touch</a>
@@ -155,6 +155,22 @@ const SpacesPage = () => {
                         £120 per month*
                       </p>
                       <AppButton className="mt-8" url="https://app.propellerexmouth.co.uk/suite/organizations/ce381a20-e223-11ee-9fd2-230857dc86d3/membership/plans/6f7c3f50-e51d-11ee-937b-e32fb13778b1" target="_blank"/>
+                    </div>
+                    <div className="w-full md:w-[48%] my-4 md:my-0 border-2 text-center border-white p-8">
+                      <p className="mb-4 text-lg font-bold text-primary-900">
+                        Dedicated desk
+                      </p>
+                      <p className="text-xl">
+                        with 24/7 access
+                      </p>
+                      <button className="mt-8 ordaloca-btn" onClick={() => setActiveElement("membership")}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                        </svg>
+                        <span className="ordaloca-btn-txt">
+                          View Membership
+                        </span>
+                      </button>
                     </div>
                   </div>
                   <a className="underline text-primary-900" href="/contact">Get in touch</a>
