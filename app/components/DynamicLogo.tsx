@@ -6,7 +6,7 @@ const LogoLong = ({ closeMenu, onClick }: {closeMenu: any; onClick: any}) => {
   return (
     <>
       <Link href="/" onClick={onClick}>
-        <svg width="291" height="28" viewBox="0 0 291 28" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-12">
+        <svg className="hidden lg:block" width="291" height="28" viewBox="0 0 291 28" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clipPath="url(#clip0_134_5967)">
             <g clipPath="url(#clip1_134_5967)">
               <g className="words hidden lg:inline">
@@ -69,6 +69,8 @@ const LogoLong = ({ closeMenu, onClick }: {closeMenu: any; onClick: any}) => {
             </clipPath>
           </defs>
         </svg>
+        <svg className="block lg:hidden" width="30" viewBox="0 0 23 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M10.47 22.65h-3.4V28H.87V.54h9.6v22.11Z" fill="#E23540"/><path d="M17.16.54H12.1v22.11h5.05V.54ZM22.04 3.95H19v15.3h3.05V3.94Z" fill="#E23540"/></svg>
+
       </Link>
       <span className="hidden">Propeller Exmouth</span>
       {/* <Image src={logoImage} alt="email icon" width="36" height="36" /> */}

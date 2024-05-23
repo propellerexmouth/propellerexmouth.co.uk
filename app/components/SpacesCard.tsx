@@ -23,7 +23,7 @@ const SpacesCard = ({ className = '', title, content, href, isAvailable = false,
                 <AppButton className="mt-2 w-fit" url={href} target={btnTarget}/>
             </div>
             <div className="w-full md:max-w-[33.333%] lg:max-w-none">
-                <Image {...image} className="w-full h-full object-cover lg:h-auto lg:object-fill" alt="placeholder"/>
+                <Image {...image} className="w-full h-full max-h-[256px] object-cover lg:h-auto" alt="placeholder"/>
             </div>
             {isAvailable && <div className="flex items-stretch bottom-0 left-0">
                 <div className="bg-white py-1 px-4">

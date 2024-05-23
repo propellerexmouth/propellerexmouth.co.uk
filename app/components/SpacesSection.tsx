@@ -25,7 +25,7 @@ const SpacesSection = ({ title, content }: { title?: string; content?: string; }
                         />
                         <SpacesCard
                             image={{
-                                src: '/images/DSC_0112.jpg',
+                                src: '/images/office.jpg',
                                 alt: 'Offices image',
                                 height: 250,
                                 width: 375,
@@ -37,7 +37,7 @@ const SpacesSection = ({ title, content }: { title?: string; content?: string; }
                         />
                         <SpacesCard
                             image={{
-                                src: '/images/DSC_0112.jpg',
+                                src: '/images/meeting-room.jpg',
                                 alt: 'Meeting Spaces image',
                                 height: 250,
                                 width: 375,

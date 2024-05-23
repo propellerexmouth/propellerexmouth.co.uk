@@ -4,20 +4,19 @@ import Image from "next/image";
 import { RightArrow } from "../components/Icons";
 import Link from "next/link";
 import SpacesSection from "../components/SpacesSection";
-
-
-import Lottie from "lottie-react";
 import shoes from '../../public/lotties/running-shoes.json';
 import burger from '../../public/lotties/burger.json';
 import swimming from '../../public/lotties/swimming-glasses.json';
-
 import "../../public/css/swiper.css";
 import 'swiper/css';
 import "../../public/css/scrollbar.css";
 import { register } from 'swiper/element/bundle';
 import { SwiperRef } from "@/types/swiper";
+import dynamic from "next/dynamic";
 
 register();
+
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 const CommunityPage = () => {
   const swiperElRef = useRef<SwiperRef>(null);
@@ -53,7 +52,7 @@ const CommunityPage = () => {
     <div className="bg-white w-full">
       <div className="w-full relative overflow-hidden">
         <div className="max-w-5xl absolute top-0 left-0 w-full h-full sm:min-w-[calc(32rem_+_40vw)]">
-          <Image src="/images/Community.jpg" alt="App screenshot" width={1080} height={720} className="object-cover h-full w-full" />
+          <Image src="/images/community-full.jpg" alt="App screenshot" width={1080} height={720} className="object-cover h-full w-full" />
         </div>
         <div className="max-w-6xl px-6 mx-auto flex justify-end items-center">
           <div className="mx-auto w-full max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl my-20 z-20 bg-primary-900 px-8 py-10 lg:px-10 lg:py-32">
@@ -131,7 +130,7 @@ const CommunityPage = () => {
                     </Link>
                   </div>
                   <div className="w-full lg:w-[30%] flex justify-center lg:block mt-8 lg:mt-0">
-                    <Image src="/images/team/Jim-Hill.jpg" alt="Jim Hill" width="200" height="200" className="object-contain h-40 w-40" loading="lazy"/>
+                    <Image src="/images/team/jim.jpg" alt="Jim Hill" width="200" height="200" className="object-contain h-40 w-40" loading="lazy"/>
                     <Image src="/images/team/Louis-Gillies.jpg" alt="Louis Gillies" width="200" height="200" className="object-contain h-40 w-40 -mt-8 lg:ml-auto lg:mr-0" loading="lazy"/>
                   </div>
                 </div>
@@ -261,7 +260,5 @@ const CommunityPage = () => {
     </div>
   );
 };
-
-
 
 export default CommunityPage;
