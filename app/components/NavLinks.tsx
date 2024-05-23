@@ -26,7 +26,7 @@ const NavLinks = ({ closeMenu, incHome = false, incContact = true, showIcons = t
           Contact
         </NavLink>
       )}
-      <NavLink href="/spaces"  closeMenu={closeMenu} onClick={onClick}>
+      <NavLink href="/spaces" className="block lg:hidden" closeMenu={closeMenu} onClick={onClick}>
         Join
         {showIcons && <UpRightArrow className="w-6 h-6 inline-block fill-current" />}
       </NavLink>
