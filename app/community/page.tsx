@@ -129,9 +129,9 @@ const CommunityPage = () => {
                       ordaloca.com
                     </Link>
                   </div>
-                  <div className="w-full lg:w-[30%] flex justify-center lg:block mt-8 lg:mt-0">
-                    <Image src="/images/team/jim.jpg" alt="Jim Hill" width="200" height="200" className="object-contain h-40 w-40" loading="lazy"/>
-                    <Image src="/images/team/Louis-Gillies.jpg" alt="Louis Gillies" width="200" height="200" className="object-contain h-40 w-40 -mt-8 lg:ml-auto lg:mr-0" loading="lazy"/>
+                  <div className="w-full lg:w-[30%] flex flex-col gap-4 md:gap-0 md:flex-row justify-center lg:block mt-8 lg:mt-0">
+                    <Image src="/images/team/Jim.jpg" alt="Jim Hill" width="200" height="200" className="object-contain h-40 w-40" loading="lazy"/>
+                    <Image src="/images/team/Louis-Gillies.jpg" alt="Louis Gillies" width="200" height="200" className="object-contain h-40 w-40 mt-4 lg:-mt-8 lg:ml-auto lg:mr-0" loading="lazy"/>
                   </div>
                 </div>
               </div>
@@ -151,9 +151,9 @@ const CommunityPage = () => {
                       pixelfridge.digital
                     </Link>
                   </div>
-                  <div className="w-full lg:w-[30%] flex justify-center lg:block mt-8 lg:mt-0">
+                  <div className="w-full lg:w-[30%] flex flex-col gap-4 md:gap-0 md:flex-row justify-center lg:block mt-8 lg:mt-0">
                     <Image src="/images/team/Laura-Gregory.jpg" alt="Laura Gregory" width="200" height="200" className="object-contain h-40 w-40" loading="lazy"/>
-                    <Image src="/images/team/Nick-Murray.jpg" alt="Nick Murray" width="200" height="200" className="object-contain h-40 w-40 -mt-8 lg:ml-auto lg:mr-0" loading="lazy"/>
+                    <Image src="/images/team/Nick-Murray.jpg" alt="Nick Murray" width="200" height="200" className="object-contain h-40 w-40 mt-4 lg:-mt-8 lg:ml-auto lg:mr-0" loading="lazy"/>
                   </div>
                 </div>
               </div>
@@ -187,7 +187,7 @@ const CommunityPage = () => {
                   />
                 </div>
                 <div className="p-4 text-sm">
-                  <p>Propeller is not just a co-working space, it&apos;s a not-for-profit, volunteer-run venture.</p>
+                  <p><strong>Monday run club:</strong> Bring your trainers and take a spin along the seafront with other members</p>
                 </div>
               </div>
               <div className="flex items-center">
@@ -202,7 +202,7 @@ const CommunityPage = () => {
                   />
                 </div>
                 <div className="p-4 text-sm">
-                  <p>We are building a community of like-minded people and businesses that share ideas.</p>
+                  <p><strong>Thursday lunch:</strong> Join some friendly folk for a social lunch - a burger at the pub, or a sandwich on the beach</p>
                 </div>
               </div>
               <div className="flex items-center">
@@ -217,7 +217,7 @@ const CommunityPage = () => {
                   />
                 </div>
                 <div className="p-4 text-sm">
-                  <p>Our focus is on promoting and growing creative and tech based industries in Exmouth.</p>
+                  <p><strong>Regular sea swims:</strong> When the weather is good we cool off with a dip at the beach</p>
                 </div>
               </div>
           </div>
