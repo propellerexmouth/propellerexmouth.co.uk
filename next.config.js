@@ -2,6 +2,15 @@
 const nextConfig = {
     compiler: {
       styledComponents: true
+    },
+    async redirects() {
+        return [
+          {
+            source: '/join',
+            destination: '/',
+            permanent: true,
+          },
+        ]
     }
 }
 
