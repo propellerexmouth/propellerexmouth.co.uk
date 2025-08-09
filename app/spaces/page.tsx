@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { RightArrow } from "../components/Icons";
 import SimpleHero from "../components/SimpleHero";
@@ -18,6 +18,29 @@ const SpacesPage = () => {
 
   const swiperElRef = useRef<SwiperRef>(null);
 
+  const setActive = (active: string) => {
+    window.location.hash = `#${active}`;
+  };
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace("#", "");
+      if (hash) {
+        setActiveElement(hash);
+      }
+    };
+
+    // Set the active element based on the initial hash
+    handleHashChange();
+
+    // Listen for hash changes
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
+
   const handleNext = () => {
     if (!swiperElRef.current) return;
     swiperElRef.current.swiper.slideNext();
@@ -33,28 +56,28 @@ const SpacesPage = () => {
           <div className="mx-auto w-full max-w-6xl px-6 py-20 flex align-top justify-between flex-col md:flex-row">
             <div className="w-full md:w-[25%]">
 
-              <div className={activeElement === "membership" ? "group is-active block cursor-pointer" : "group block cursor-pointer"} onClick={() => setActiveElement("membership")}>
+              <div className={activeElement === "membership" ? "group is-active block cursor-pointer" : "group block cursor-pointer"} onClick={() => setActive("membership")}>
                 <div className="flex items-center justify-between p-6 mb-4 bg-white text-black border border-white group-[.is-active]:bg-primary-900 group-[.is-active]:text-white group-[.is-active]:border-primary-900">
                   <span className="font-bold">24/7 Membership</span>
                   <RightArrow className="w-6 h-6 group-[.is-active]:fill-white fill-primary-900 group-[.is-active]:rotate-90 group-[.is-active]:md:rotate-0 transition-all"/>
                 </div>
               </div>
 
-              <div className={activeElement === "desks" ? "group is-active block cursor-pointer" : "group block cursor-pointer"} onClick={() => setActiveElement("desks")}>
+              <div className={activeElement === "desks" ? "group is-active block cursor-pointer" : "group block cursor-pointer"} onClick={() => setActive("desks")}>
                 <div className="flex items-center justify-between p-6 mb-4 bg-white text-black border border-white group-[.is-active]:bg-primary-900 group-[.is-active]:text-white group-[.is-active]:border-primary-900">
                   <span className="font-bold">Desks</span>
                   <RightArrow className="w-6 h-6 group-[.is-active]:fill-white fill-primary-900 group-[.is-active]:rotate-90 group-[.is-active]:md:rotate-0 transition-all"/>
                 </div>
               </div>
 
-              <div className={activeElement === "offices" ? "group is-active block cursor-pointer" : "group block cursor-pointer"} onClick={() => setActiveElement("offices")}>
+              <div className={activeElement === "offices" ? "group is-active block cursor-pointer" : "group block cursor-pointer"} onClick={() => setActive("offices")}>
                 <div className="flex items-center justify-between p-6 mb-4 bg-white text-black border border-white group-[.is-active]:bg-primary-900 group-[.is-active]:text-white group-[.is-active]:border-primary-900">
                   <span className="font-bold">Offices</span>
                   <RightArrow className="w-6 h-6 group-[.is-active]:fill-white fill-primary-900 group-[.is-active]:rotate-90 group-[.is-active]:md:rotate-0 transition-all"/>
                 </div>
               </div>
 
-              <div className={activeElement === "meetings" ? "group is-active block cursor-pointer" : "group block cursor-pointer"} onClick={() => setActiveElement("meetings")}>
+              <div className={activeElement === "meetings" ? "group is-active block cursor-pointer" : "group block cursor-pointer"} onClick={() => setActive("meetings")}>
                 <div className="flex items-center justify-between p-6 mb-4 bg-white text-black border border-white group-[.is-active]:bg-primary-900 group-[.is-active]:text-white group-[.is-active]:border-primary-900">
                   <span className="font-bold">Meeting Spaces</span>
                   <RightArrow className="w-6 h-6 group-[.is-active]:fill-white fill-primary-900 group-[.is-active]:rotate-90 group-[.is-active]:md:rotate-0 transition-all"/>
@@ -163,7 +186,7 @@ const SpacesPage = () => {
                       <p className="text-xl">
                         with 24/7 access
                       </p>
-                      <button className="mt-8 ordaloca-btn" onClick={() => setActiveElement("membership")}>
+                      <button className="mt-8 ordaloca-btn" onClick={() => setActive("membership")}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
                         </svg>
