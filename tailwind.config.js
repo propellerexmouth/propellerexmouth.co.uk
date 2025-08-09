@@ -16,6 +16,19 @@ module.exports = {
       "grey-20": "#f1f1f1",
     },
     extend: {
+      keyframes: {
+        marquee: {
+          from: {
+            transform: "translateX(0)",
+          },
+          to: {
+            transform: "translateX(calc(-100% - var(--marquee-gap)))",
+          },
+        },
+      },
+      animation: {
+        marquee: "marquee var(--marquee-animation-duration) linear infinite",
+      },
       maxWidth: {
         wrapper: "1248px",
       },

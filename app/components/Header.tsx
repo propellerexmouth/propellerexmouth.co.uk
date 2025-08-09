@@ -5,6 +5,7 @@ import DynamicLogo from "./DynamicLogo";
 import NavLinks from "./NavLinks";
 import { CloseIcon, MenuIcon } from "./Icons";
 import SocialLinks from "./SocialLinks";
+import { TickerBar } from "./TickerBar";
 
 const Header = ({ onClick }: { onClick?: () => void }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,6 +42,7 @@ const Header = ({ onClick }: { onClick?: () => void }) => {
           </div>
         </div>
       </header>
+      <TickerBar />
     </>
   );
 };
