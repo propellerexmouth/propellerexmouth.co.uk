@@ -6,7 +6,6 @@ import SimpleHero from "../components/SimpleHero";
 import MemberBenefits from "../components/MemberBenefits";
 
 import "../../public/css/swiper.css";
-import 'swiper/css';
 import { register } from 'swiper/element/bundle';
 import { SwiperRef } from "@/types/swiper";
 import AppButton from "../components/AppButton";
