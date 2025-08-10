@@ -6,6 +6,7 @@ const LogoLong = ({ closeMenu, onClick }: {closeMenu: any; onClick: any}) => {
   return (
     <>
       <Link href="/" onClick={onClick}>
+        <div className="sr-only">Propeller Exmouth</div>
         <svg className="hidden lg:block" width="291" height="28" viewBox="0 0 291 28" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clipPath="url(#clip0_134_5967)">
             <g clipPath="url(#clip1_134_5967)">
