@@ -34,7 +34,7 @@ const HomePage = () => {
           </div>
           <div className="absolute inset-0 lg:relative w-full mx-auto max-w-none md:max-w-2xl mt-0 lg:-ml-10 lg:mr-0 lg:max-w-none xl:-ml-64 z-1">
             <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-full h-full lg:h-auto">
-              <Image src="/images/DSC_0112.jpg" alt="App screenshot" width={1080} height={720} className="w-[60rem] h-full lg:h-auto object-cover" />
+              <Image priority={true} src="/images/DSC_0112.jpg" alt="Propeller Exmouth Community members working at some hot desks" width={1080} height={720} className="w-[60rem] h-full lg:h-auto object-cover" />
             </div>
           </div>
         </div>
