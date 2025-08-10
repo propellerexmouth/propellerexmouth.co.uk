@@ -41,7 +41,7 @@ const HomePage = () => {
       </div>
       <div className="relative max-w-6xl px-6 mx-auto overflow-hidden">
         <div className="flex flex-col w-full items-center mt-10 mb-20">
-          <h1 className="text-primary-900 text-4xl font-bold mb-12">The Propeller Community</h1>
+          <h2 className="text-primary-900 text-4xl font-bold mb-12">The Propeller Community</h2>
           <div className="flex justify-evenly w-full mb-12 flex-col lg:flex-row gap-4">
             <div className="flex items-center">
               <div className="flex items-center aspect-square p-4 bg-secondary-100 text-secondary-900 bold text-3xl h-24 w-24 justify-center">
