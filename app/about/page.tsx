@@ -27,9 +27,9 @@ const AboutPage = () => {
             </div>
           </div>
           <div className="w-full md:w-[48%] mt-12 md:mt-0">
-            <h4 className="mb-10 text-xl tracking-tight sm:text-2xl">
+            <h2 className="mb-10 text-xl tracking-tight sm:text-2xl">
               Propeller is not just a co-working space, it’s a not-for-profit, volunteer run venture designed with a particular bias towards the creative and tech based industries, with a focus on promoting and growing these sectors in Exmouth.
-            </h4>
+            </h2>
             <p>
               Propeller is run as a social enterprise with the aim of making Exmouth an incredible place to build businesses while retaining a great lifestyle. We want people, especially students and school leavers, to believe they can live and thrive in Exmouth.
             </p>
@@ -38,9 +38,9 @@ const AboutPage = () => {
       </div>
 
       <div className="mx-auto w-full max-w-3xl px-6 py-20">
-        <h4 className="mb-16 text-center text-xl tracking-tight sm:text-3xl text-primary-900 font-bold">
+        <h3 className="mb-16 text-center text-xl tracking-tight sm:text-3xl text-primary-900 font-bold">
           The Team
-        </h4>
+        </h3>
 
         {/* <div className="flex items-center justify-between mt-8 flex-col md:flex-row">
           <div className="w-fit md:w-[18%]">
@@ -66,9 +66,9 @@ const AboutPage = () => {
             <h4 className="font-bold uppercase text-md">
               Nathan Budd
             </h4>
-            <h4 className="mb-4 text-xl tracking-tight sm:text-2xl">
+            <p className="mb-4 text-xl tracking-tight sm:text-2xl">
               Founding director (Volunteer)
-            </h4>
+            </p>
             {/* <p>
             </p> */}
           </div>
@@ -82,9 +82,9 @@ const AboutPage = () => {
             <h4 className="font-bold uppercase text-md">
               Jim Hill
             </h4>
-            <h4 className="mb-4 text-xl tracking-tight sm:text-2xl">
+            <p className="mb-4 text-xl tracking-tight sm:text-2xl">
               Founding director (Volunteer)
-            </h4>
+            </p>
             {/* <p>
             </p> */}
           </div>
@@ -98,9 +98,9 @@ const AboutPage = () => {
             <h4 className="font-bold uppercase text-md">
               Alex Marshall
             </h4>
-            <h4 className="mb-4 text-xl tracking-tight sm:text-2xl">
+            <p className="mb-4 text-xl tracking-tight sm:text-2xl">
               Founding member (Volunteer)
-            </h4>
+            </p>
             {/* <p>
             </p> */}
           </div>
@@ -114,9 +114,9 @@ const AboutPage = () => {
             <h4 className="font-bold uppercase text-md">
               Jasper Westaway
             </h4>
-            <h4 className="mb-4 text-xl tracking-tight sm:text-2xl">
+            <p className="mb-4 text-xl tracking-tight sm:text-2xl">
               Founding director (Volunteer)
-            </h4>
+            </p>
             {/* <p>
             </p> */}
           </div>
@@ -167,7 +167,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      
+
 
     </div>
   );
