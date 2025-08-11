@@ -287,13 +287,13 @@ const SpacesPage = () => {
               space-between={50}
             >
               <swiper-slide>
-                <Image src="/images/Court-house.jpg" alt="placeholder image" className="object-cover h-full w-full aspect-square" width="500" height="500" loading="lazy"/>
+                <Image src="/images/Court-house.jpg" alt="The Court House at Propeller Exmouth, showcasing hot desks and office and sofa huddle area" className="object-cover h-full w-full aspect-square" width="500" height="500" loading="lazy" />
               </swiper-slide>
               <swiper-slide>
-                <Image src="/images/bar-stairs.jpg" alt="placeholder image" className="object-cover h-full w-full aspect-square" width="500" height="500" loading="lazy"/>
+                <Image src="/images/bar-stairs.jpg" alt="Multiple Propeller Exmouth community members surrounding a Cross Anchor Brewery mobile bar at a Propeller Event" className="object-cover h-full w-full aspect-square" width="500" height="500" loading="lazy" />
               </swiper-slide>
               <swiper-slide>
-                <Image src="/images/inconf-room.jpg" alt="placeholder image" className="object-cover h-full w-full aspect-square" width="500" height="500" loading="lazy"/>
+                <Image src="/images/inconf-room.jpg" alt="Multiple Propeller Exmouth community members working in The Old Stables room" className="object-cover h-full w-full aspect-square" width="500" height="500" loading="lazy" />
               </swiper-slide>
             </swiper-container>
 

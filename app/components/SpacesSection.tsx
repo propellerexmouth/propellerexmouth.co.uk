@@ -14,7 +14,7 @@ const SpacesSection = ({ title, content }: { title?: string; content?: string; }
                         <SpacesCard
                             image={{
                                 src: '/images/DSC_0112.jpg',
-                                alt: 'Co-working image',
+                                alt: 'The Court House at Propeller Exmouth, showcasing hot desks and office and sofa huddle area',
                                 height: 250,
                                 width: 375,
                             }}
@@ -26,7 +26,7 @@ const SpacesSection = ({ title, content }: { title?: string; content?: string; }
                         <SpacesCard
                             image={{
                                 src: '/images/office.jpg',
-                                alt: 'Offices image',
+                                alt: 'Two desks in a bright office located in Propeller Exmouth',
                                 height: 250,
                                 width: 375,
                             }}
@@ -38,7 +38,7 @@ const SpacesSection = ({ title, content }: { title?: string; content?: string; }
                         <SpacesCard
                             image={{
                                 src: '/images/meeting-room.jpg',
-                                alt: 'Meeting Spaces image',
+                                alt: 'The John Petty Meeting room at Propeller Exmouth',
                                 height: 250,
                                 width: 375,
                             }}
