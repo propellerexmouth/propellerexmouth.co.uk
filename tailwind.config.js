@@ -7,7 +7,7 @@ module.exports = {
       current: "currentColor",
       black: "#000",
       white: "#fff",
-      "primary-900": "#e23540",
+      "primary-900": "#E12D39",
       "primary-100": "#ffe9df",
       "secondary-900": "#355d63",
       "secondary-100": "#d5eaec",
