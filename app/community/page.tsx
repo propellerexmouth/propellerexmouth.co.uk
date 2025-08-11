@@ -24,7 +24,7 @@ const CommunityPage = () => {
     { src: "/images/inconf.png", alt: "Inconf Logo" },
     { src: "/images/DataFiltr.png", alt: "DataFiltr Logo" },
     { src: "/images/ordaloca.png", alt: "Ordaloca Logo" },
-    { src: "/images/pixel-fridge-logo.png", alt: "Pixelfridge Logo" },
+    { src: "/images/pixelfridge.svg", alt: "Pixelfridge Logo" },
     { src: "/images/radiance.png", alt: "Radiance Logo" },
     { src: "/images/tvav.png", alt: "TVAV Logo" },
   ]);
@@ -125,10 +125,10 @@ const CommunityPage = () => {
                 <div className="mr-2 relative hidden lg:block w-20 h-40 bg-primary-900"></div>
                 <div className="flex flex-col lg:flex-row items-center justify-between bg-white p-8">
                   <div className="w-full lg:w-[60%]">
-                    <Image src="/pixelfridge.svg" alt="PixelFridge" width="200" height="200" className="object-contain h-8 w-auto mb-8" loading="lazy" />
+                    <Image src="/images/pixelfridge.svg" alt="Pixelfridge" width="200" height="200" className="object-contain h-8 w-auto mb-8" loading="lazy" />
                     <p className="mb-8">Excellent place to work! A truly friendly, welcoming and helpful community. Great for a day&apos;s hot desk by the beach or permanent office space. Nice shower and indoor bike storage too.</p>
-                    <Link href="https://pixelfridge.digital" className="text-primary-900 underline text-xl">
-                      pixelfridge.digital
+                    <Link href="https://pixelfridge.com" className="text-primary-900 underline text-xl">
+                      pixelfridge.com
                     </Link>
                   </div>
                   <div className="w-full lg:w-[30%] flex flex-col gap-4 md:gap-0 md:flex-row justify-center lg:block mt-8 lg:mt-0">
