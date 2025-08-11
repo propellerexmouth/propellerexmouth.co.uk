@@ -99,8 +99,45 @@ const CommunityPage = () => {
           <h3 className="text-primary-900 text-4xl font-bold mb-12 text-center">Community Stories</h3>
 
           <swiper-container ref={swiperElRef} slides-per-view={1} space-between={30} centered-slides={true} loop={false} speed={1000} watch-slides-progress={true}>
-            {/* Community stories slides go here */}
-            {/* ... */}
+            <swiper-slide>
+              <div className="flex community-slide">
+                <div className="mr-2 relative hidden lg:block w-10 h-24 bg-primary-900"></div>
+                <div className="mr-2 relative hidden lg:block w-20 h-40 bg-primary-900"></div>
+                <div className="flex flex-col lg:flex-row items-center justify-between bg-white p-8">
+                  <div className="w-full lg:w-[60%]">
+                    <Image src="/images/ordaloca.png" alt="Ordaloca" width="200" height="200" className="object-contain h-8 w-auto mb-8" loading="lazy" />
+                    <p className="mb-8">Amazing working environment and place to hot desk in a great location. Friendly people and positive vibes. Highly recommended!</p>
+                    <Link href="https://ordaloca.com" className="text-primary-900 underline text-xl">
+                      ordaloca.com
+                    </Link>
+                  </div>
+                  <div className="w-full lg:w-[30%] flex flex-col gap-4 md:gap-0 md:flex-row justify-center lg:block mt-8 lg:mt-0">
+                    <Image src="/images/team/Jim.jpg" alt="Jim Hill" width="200" height="200" className="object-contain h-40 w-40" loading="lazy" />
+                    <Image src="/images/team/Louis-Gillies.jpg" alt="Louis Gillies" width="200" height="200" className="object-contain h-40 w-40 mt-4 lg:-mt-8 lg:ml-auto lg:mr-0" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide>
+              <div className="flex community-slide">
+                <div className="mr-2 relative hidden lg:block w-10 h-24 bg-primary-900"></div>
+                <div className="mr-2 relative hidden lg:block w-20 h-40 bg-primary-900"></div>
+                <div className="flex flex-col lg:flex-row items-center justify-between bg-white p-8">
+                  <div className="w-full lg:w-[60%]">
+                    <Image src="/pixelfridge.svg" alt="PixelFridge" width="200" height="200" className="object-contain h-8 w-auto mb-8" loading="lazy" />
+                    <p className="mb-8">Excellent place to work! A truly friendly, welcoming and helpful community. Great for a day&apos;s hot desk by the beach or permanent office space. Nice shower and indoor bike storage too.</p>
+                    <Link href="https://pixelfridge.digital" className="text-primary-900 underline text-xl">
+                      pixelfridge.digital
+                    </Link>
+                  </div>
+                  <div className="w-full lg:w-[30%] flex flex-col gap-4 md:gap-0 md:flex-row justify-center lg:block mt-8 lg:mt-0">
+                    <Image src="/images/team/Laura-Gregory.jpg" alt="Laura Gregory" width="200" height="200" className="object-contain h-40 w-40" loading="lazy" />
+                    <Image src="/images/team/Nick-Murray.jpg" alt="Nick Murray" width="200" height="200" className="object-contain h-40 w-40 mt-4 lg:-mt-8 lg:ml-auto lg:mr-0" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
           </swiper-container>
 
           <div className={(!prevActive ? "opacity-0" : "opacity-100") + " next-arrow w-10 h-10 absolute top-1/2 left-4 lg:left-auto lg:right-full -translate-y-1/2 fill-primary-900 z-10 cursor-pointer transition-all duration-300"} onClick={handlePrev}>
