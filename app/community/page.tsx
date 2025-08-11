@@ -70,7 +70,7 @@ const CommunityPage = () => {
     <div className="bg-white w-full">
       <div className="w-full relative overflow-hidden">
         <div className="max-w-5xl absolute top-0 left-0 w-full h-full sm:min-w-[calc(32rem_+_40vw)]">
-          <Image src="/images/community-full.jpg" alt="A wide angled group shot of members of the Propeller Exmouth Community" width={1080} height={720} className="object-cover h-full w-full" />
+          <Image priority={true} src="/images/community-full.jpg" alt="A wide angled group shot of members of the Propeller Exmouth Community" width={1080} height={720} className="object-cover h-full w-full" />
         </div>
         <div className="max-w-6xl px-6 mx-auto flex justify-end items-center">
           <div className="mx-auto w-full max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl my-20 z-20 bg-primary-900 px-8 py-10 lg:px-10 lg:py-32">
