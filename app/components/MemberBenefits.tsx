@@ -15,7 +15,7 @@ const MemberBenefits = ({ title, content }: { title?: string; content?: string; 
         <div className="mx-auto w-full max-w-6xl px-6 my-20">
             <div className="flex flex-col w-full items-center">
 
-                {title && <h3 className="text-primary-900 text-4xl font-bold mb-12">{title}</h3>}
+                {title && <h2 className="text-primary-900 text-4xl font-bold mb-12">{title}</h2>}
                 {content && <p>{content}</p>}
 
                 <div className="flex justify-evenly flex-wrap w-full mb-12">

@@ -1,26 +1,24 @@
 "use client";
 
 import Link from "next/link";
-import { CSSProperties, useEffect, useRef, useState } from "react";
+import { CSSProperties, PropsWithChildren, useEffect, useRef, useState } from "react";
 
-export const TickerBar = ({
-  items = [
-    <div key="desks">
-      Hot desks available -{" "}
-      <Link href="/spaces#desks" className="underline underline-offset-2 cursor-pointer">
-        book now
-      </Link>
-    </div>,
-    <div key="offices">
-      Offices available now -{" "}
-      <Link href="/spaces#offices" className="underline underline-offset-2 cursor-pointer">
-        enquire
-      </Link>
-    </div>,
-  ],
-}: {
-  items?: Array<any>;
-}) => {
+const TickerBarItem = ({ children }: PropsWithChildren) => {
+  return (
+    <li className="flex items-center">
+      <span>{children}</span>
+      <div className="inline-block mt-0 w-[15px] h-[19px] ml-[--marquee-gap]">
+        <svg width="15" height="19" viewBox="0 0 15 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fillRule="evenodd" clipRule="evenodd" d="M6.44352 15.1634H4.16224V18.7741H0V0.225952H6.44352V15.1634Z" fill="white" />
+          <path d="M10.9413 0.225952H7.54736V15.1634H10.9413V0.225952Z" />
+          <path d="M14.2205 2.52856H12.1718V12.8607H14.2205V2.52856Z" />
+        </svg>
+      </div>
+    </li>
+  );
+};
+
+export const TickerBar = () => {
   const [amount, setAmount] = useState<number>(1);
   const [animationDuration, setAnimationDuration] = useState<string>("50s");
   const elementRef = useRef<HTMLDivElement | null>(null);
@@ -56,7 +54,7 @@ export const TickerBar = ({
         resizeObserver.unobserve(elementRefCurrent);
       }
     };
-  }, [items, amount]);
+  }, [amount]);
 
   return (
     <div ref={elementRef} className="[--marquee-gap:2.5rem] group relative flex py-2 bg-secondary-900 text-white select-none overflow-hidden gap-[--marquee-gap]" style={{ "--marquee-animation-duration": animationDuration } as CSSProperties}>
@@ -70,18 +68,18 @@ export const TickerBar = ({
         >
           {[...Array(amount)].map((_, amountIndex) => (
             <ul ref={amountIndex === 0 && index === 0 ? groupRef : null} key={amountIndex} data-banner-scroll-group className="flex gap-[--marquee-gap]">
-              {items.map((item, idx) => (
-                <li key={idx} className="flex items-center">
-                  {item}
-                  <div className="inline-block mt-0 w-[15px] h-[19px] ml-[--marquee-gap]">
-                    <svg width="15" height="19" viewBox="0 0 15 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path fillRule="evenodd" clipRule="evenodd" d="M6.44352 15.1634H4.16224V18.7741H0V0.225952H6.44352V15.1634Z" fill="white" />
-                      <path d="M10.9413 0.225952H7.54736V15.1634H10.9413V0.225952Z" />
-                      <path d="M14.2205 2.52856H12.1718V12.8607H14.2205V2.52856Z" />
-                    </svg>
-                  </div>
-                </li>
-              ))}
+              <TickerBarItem key="desks">
+                Hot desks available -{" "}
+                <Link href="/spaces#desks" tabIndex={amountIndex > 0 || index > 0 ? -1 : undefined} className="underline underline-offset-2 cursor-pointer">
+                  book now
+                </Link>
+              </TickerBarItem>
+              <TickerBarItem key="offices">
+                Offices available now -{" "}
+                <Link href="/spaces#offices" tabIndex={amountIndex > 0 || index > 0 ? -1 : undefined} className="underline underline-offset-2 cursor-pointer">
+                  enquire
+                </Link>
+              </TickerBarItem>
             </ul>
           ))}
         </div>

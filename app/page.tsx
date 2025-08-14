@@ -34,14 +34,14 @@ const HomePage = () => {
           </div>
           <div className="absolute inset-0 lg:relative w-full mx-auto max-w-none md:max-w-2xl mt-0 lg:-ml-10 lg:mr-0 lg:max-w-none xl:-ml-64 z-1">
             <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-full h-full lg:h-auto">
-              <Image src="/images/DSC_0112.jpg" alt="App screenshot" width={1080} height={720} className="w-[60rem] h-full lg:h-auto object-cover" />
+              <Image priority={true} src="/images/DSC_0112.jpg" alt="Propeller Exmouth Community members working at some hot desks" width={1080} height={720} className="w-[60rem] h-full lg:h-auto object-cover" />
             </div>
           </div>
         </div>
       </div>
       <div className="relative max-w-6xl px-6 mx-auto overflow-hidden">
         <div className="flex flex-col w-full items-center mt-10 mb-20">
-          <h1 className="text-primary-900 text-4xl font-bold mb-12">The Propeller Community</h1>
+          <h2 className="text-primary-900 text-4xl font-bold mb-12">The Propeller Community</h2>
           <div className="flex justify-evenly w-full mb-12 flex-col lg:flex-row gap-4">
             <div className="flex items-center">
               <div className="flex items-center aspect-square p-4 bg-secondary-100 text-secondary-900 bold text-3xl h-24 w-24 justify-center">
