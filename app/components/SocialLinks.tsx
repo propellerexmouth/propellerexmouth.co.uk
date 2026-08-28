@@ -2,7 +2,11 @@
 import React, { useEffect, useState } from "react";
 import { FacebookIcon, InstagramIcon, LinkedinIcon, TwitterIcon } from "./Icons";
 
-const SocialLinks = ({ size = 'md' }: { size?: 'sm'|'md'|'lg' }) => {
+type SocialPlatform = 'facebook'|'instagram'|'twitter'|'linkedin';
+
+const allPlatforms: SocialPlatform[] = ['facebook', 'instagram', 'twitter', 'linkedin'];
+
+const SocialLinks = ({ size = 'md', platforms = allPlatforms }: { size?: 'sm'|'md'|'lg'; platforms?: SocialPlatform[] }) => {
   const [linkSizeClass, setLinkSizeClass] = useState('w-8 h-8 p-2');
   const [gapSize, setGapSize] = useState('gap-2');
 
@@ -25,26 +29,34 @@ const SocialLinks = ({ size = 'md' }: { size?: 'sm'|'md'|'lg' }) => {
 
   return (
     <menu className={`inline-flex ${gapSize} text-primary-900 py-1`}>
-      <li>
-        <a target="_blank" rel="nofollow" href="https://www.facebook.com/propellerexmouth" className={`bg-white rounded-full ${linkSizeClass} block hover:scale-110 transition-all`}>
-          <FacebookIcon className={`w-full h-full stroke-none`} />
-        </a>
-      </li>
-      <li>
-        <a target="_blank" rel="nofollow" href="https://www.instagram.com/propellerexmouth/" className={`bg-white rounded-full ${linkSizeClass} block hover:scale-110 transition-all`}>
-          <InstagramIcon className={`w-full h-full stroke-none`} />
-        </a>
-      </li>
-      <li>
-        <a target="_blank" rel="nofollow" href="https://twitter.com/propellerexm" className={`bg-white rounded-full ${linkSizeClass} block hover:scale-110 transition-all`}>
-          <TwitterIcon className={`w-full h-full stroke-none`} />
-        </a>
-      </li>
-      <li>
-        <a target="_blank" rel="nofollow" href="https://www.linkedin.com/company/propellerexmouth" className={`bg-white rounded-full ${linkSizeClass} block hover:scale-110 transition-all`}>
-          <LinkedinIcon className={`w-full h-full stroke-none`} />
-        </a>
-      </li>
+      {platforms.includes('facebook') && (
+        <li>
+          <a target="_blank" rel="nofollow" href="https://www.facebook.com/propellerexmouth" className={`bg-white rounded-full ${linkSizeClass} block hover:scale-110 transition-all`}>
+            <FacebookIcon className={`w-full h-full stroke-none`} />
+          </a>
+        </li>
+      )}
+      {platforms.includes('instagram') && (
+        <li>
+          <a target="_blank" rel="nofollow" href="https://www.instagram.com/propellerexmouth/" className={`bg-white rounded-full ${linkSizeClass} block hover:scale-110 transition-all`}>
+            <InstagramIcon className={`w-full h-full stroke-none`} />
+          </a>
+        </li>
+      )}
+      {platforms.includes('twitter') && (
+        <li>
+          <a target="_blank" rel="nofollow" href="https://twitter.com/propellerexm" className={`bg-white rounded-full ${linkSizeClass} block hover:scale-110 transition-all`}>
+            <TwitterIcon className={`w-full h-full stroke-none`} />
+          </a>
+        </li>
+      )}
+      {platforms.includes('linkedin') && (
+        <li>
+          <a target="_blank" rel="nofollow" href="https://www.linkedin.com/company/propellerexmouth" className={`bg-white rounded-full ${linkSizeClass} block hover:scale-110 transition-all`}>
+            <LinkedinIcon className={`w-full h-full stroke-none`} />
+          </a>
+        </li>
+      )}
       {/*<li>
          <a className="font-mono" target="_blank" rel="nofollow" href="https://eventbrite.co.uk/o/propeller-exmouth-30738512963">
         eb

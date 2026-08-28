@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const LogoLong = ({ closeMenu, onClick }: {closeMenu: any; onClick: any}) => {
+const LogoLong = ({ closeMenu, onClick }: {closeMenu?: any; onClick?: any}) => {
   return (
     <>
       <Link href="/" onClick={onClick}>
